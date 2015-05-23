@@ -92,11 +92,14 @@ header{
 .main-nav__item a{
 	font-size: @fz18;
 	color: @text-color;
+	font-family: @roboto;
+	font-weight: @light;
 	border-right: 1px solid #f4f2f2;
 	padding: 23px 40px 20px;
 	display: block;
 	box-sizing: border-box;
 	transition: padding .1s;
+	white-space: nowrap;
 }
 
 .main-nav__item:hover{
@@ -104,6 +107,7 @@ header{
 }
 
 .main-nav__item:hover a{
+	font-weight: @regular;
 	padding: 18px 40px 20px;
 }
 
