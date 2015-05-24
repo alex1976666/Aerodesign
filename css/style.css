@@ -1,13 +1,13 @@
 header {
   margin-top: 15px;
 }
-header .col-lg-2 {
+header .col-xs-2 {
   padding: 0;
 }
-header .col-lg-3 {
+header .col-xs-3 {
   padding-right: 0;
 }
-header .col-lg-1 {
+header .col-xs-1 {
   padding: 0;
 }
 header .logo {
@@ -26,6 +26,9 @@ header .header-slogan {
   color: #434a54;
   text-transform: uppercase;
 }
+header .vk {
+  padding-left: 40px;
+}
 header .numb {
   display: inline-block;
   vertical-align: top;
@@ -41,7 +44,7 @@ header .callme {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
-header .col-lg-1 div {
+header .col-xs-1 div {
   font-size: 14px;
 }
 header .icon-basket {
@@ -224,37 +227,51 @@ header .main-nav__item:hover a {
 footer {
   font-size: 14px;
   background-color: #eeeff2;
-  padding-top: 37px;
+  padding-top: 26px;
 }
 footer .grey-line {
   height: 1px;
   background-color: #ccd1d9;
-  margin-top: 35px;
+  margin-top: 22px;
 }
 footer .numb {
   display: inline-block;
   vertical-align: top;
-  margin-left: 4px;
+  margin-left: 15px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #434a54;
+  white-space: nowrap;
+  line-height: 29px;
+}
+footer p {
+  margin-bottom: 0;
 }
 .footer-adress {
+  margin-top: 10px;
+}
+.footer-adress > div {
   width: 230px;
   display: inline-block;
   vertical-align: middle;
 }
-.footer-adress p {
-  margin-bottom: 0;
+.footer-phones {
+  margin-top: 10px;
 }
 .footer-phones span {
   margin-left: 0;
   vertical-align: middle;
-  line-height: 29px;
 }
 .footer-mail {
   display: inline-block;
+  margin-top: 10px;
+}
+.footer-mail > div {
+  display: inline-block;
   vertical-align: middle;
+}
+.social {
+  margin-top: 19px;
 }
 .footer-nav ul {
   width: 100%;
