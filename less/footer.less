@@ -16,7 +16,7 @@ footer{
 		
 		display: inline-block;
 		vertical-align: top;
-		margin-left: 12px;
+		margin-left: 4px;
 		font-family: @roboto;
 		font-weight: @light;
 		color: @text-color;
@@ -50,21 +50,27 @@ footer{
 
 // nav
 
-.footer-nav{
+.footer-nav ul{
 	width: 100%;
-	display: table;
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
 
 	&__item{
-		display: table-cell;
+		/*display: table-cell;*/
 	}
 
-	&__item a{
+
+}
+.footer-nav__item a{
 		font-family: @roboto;
 		font-weight: @light;
 		font-size: 14px;
 		color: @text-color;
-		padding: 23px 47px 20px;
 		display: block;
-		box-sizing: border-box;
+		line-height: 66px;
 		}
-}
