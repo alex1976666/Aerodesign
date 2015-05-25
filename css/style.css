@@ -350,12 +350,14 @@ img {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   vertical-align: baseline;
+  color: #434a54;
 }
 .roboto-regular__default {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   vertical-align: baseline;
+  color: #434a54;
 }
 #owl-demo .item img {
   display: block;
@@ -619,6 +621,7 @@ img {
 .form-box label {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  color: #434a54;
   font-size: 14px;
 }
 .form-box input {
@@ -632,6 +635,7 @@ img {
   -moz-border-radius: 6px;
   border-radius: 6px;
   border: solid 1px #e6e9ed;
+  box-sizing: border-box;
   width: 100%;
   outline: 0;
   margin-bottom: 17px;
