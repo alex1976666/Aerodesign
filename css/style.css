@@ -1,5 +1,6 @@
 header {
   margin-top: 15px;
+  margin-bottom: 40px;
 }
 header .col-xs-2 {
   padding: 0;
@@ -12,6 +13,9 @@ header .col-xs-1 {
 }
 header .logo {
   cursor: pointer;
+}
+header .logo a {
+  text-decoration: none;
 }
 header .logo span {
   font-size: 60px;
@@ -228,6 +232,7 @@ footer {
   font-size: 14px;
   background-color: #eeeff2;
   padding-top: 26px;
+  margin-top: 75px;
 }
 footer .grey-line {
   height: 1px;
@@ -272,6 +277,12 @@ footer p {
 }
 .social {
   margin-top: 19px;
+}
+.social i {
+  transition: transform 0.2s;
+}
+.social i:hover {
+  transform: scale(1.1);
 }
 .footer-nav ul {
   width: 100%;
@@ -595,7 +606,6 @@ img {
   padding: 40px 15px 18px;
   min-height: 412px;
   position: relative;
-  margin-bottom: 74px;
 }
 .form-box:after {
   content: "";
@@ -662,6 +672,19 @@ img {
 }
 .form-box input:last-of-type {
   margin-bottom: 30px;
+}
+.left-side-menu {
+  min-height: 410px;
+  padding-left: 0;
+}
+.left-side-menu li {
+  list-style: none;
+}
+.left-side-menu a {
+  line-height: 52px;
+}
+.left-side-menu .icon-mini-arrow-down {
+  margin-left: 15px;
 }
 .icon {
   background-image: url(../img/icons/spritesheet2.png);
@@ -784,6 +807,7 @@ img {
   width: 7px;
   height: 13px;
   background-position: -922px -3px;
+  margin-bottom: 4px;
 }
 .icon-orange-calendar {
   width: 25px;
