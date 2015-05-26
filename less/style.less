@@ -16,8 +16,13 @@ ul{
 	padding: 0;
 }
 
+
 .no-padding{
 	padding: 0;
+}
+
+.no-margin{
+	margin: 0;
 }
 
 .pr-0{
@@ -29,6 +34,7 @@ ul{
 }
 img{
 	max-width: 100%;
+	border-radius: 7px;
 }
 
 .height-343{
@@ -66,6 +72,41 @@ img{
 	margin: 0 auto;
 }
 
+.page{
+
+	margin-top: 65px;
+
+	ul li{
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	ul li a{
+		width: 40px;
+		height: 40px;
+		font-family: @roboto;
+		font-weight: @light;
+		font-size: @fz18;
+		color:@text-color;
+		display: inline-block;
+		border-radius: 50%;
+		vertical-align: middle;
+		padding-top: 7px;
+
+
+		&:hover{
+			background-color: #eeeff2;
+			color: #f68100;
+		}
+	}
+
+
+
+}
+
+
+
 // Typography
 
 
@@ -98,9 +139,9 @@ img{
 .bordered{
 	border: 1px solid #e1e1e1;
 	box-shadow: 0 2px 3px #f0f0f0;
-	border-radius: 6px;
+	border-radius: 7px;
 	padding-right: 0;
-
+	box-sizing: border-box;
 }
 
 .mt24{
@@ -178,8 +219,6 @@ img{
 
 .product-card{
 	min-height: 300px;
-	border: 1px solid #d7d7d7;
-	border-radius: 7px;
 	box-sizing: border-box;
 	font-size: 0;
 	padding: 15px 15px 15px 17px;
@@ -211,7 +250,14 @@ img{
 
 }
 
+////////////////////////////////////////
+/////////    product-card     //////////
+////////////////////////////////////////
 
+
+.uppercase{
+	text-transform: uppercase;
+}
 
 .product-card__title{
 	font-size: @fz18;
@@ -351,6 +397,8 @@ img{
 		    background-position: -1510px -3px;
 		}
 
+
+
 		}
 
 	
@@ -367,7 +415,10 @@ img{
 
 		}
 
-	
+		
+				&__wedding ul li{
+			color: #f68100;
+		}
 
 
 }
@@ -528,19 +579,46 @@ img{
 
 	.icon-mini-arrow-down{
 		margin-left: 15px;
+		transition: transform .2s;
 	}
 
-	.icon-orange-arrow{
-
-	}
-
-	.roboto-light__default{
-		
+	.roboto-regular__default:hover .icon-mini-arrow-down{
+			transform: scale(1.5);
 	}
 
 }
 
 
+.ready-solution__wedding{
+
+
+
+	.product-card__title{
+		margin-bottom: 30px;
+	}
+
+	.bordered{
+		padding: 27px 52px 27px 27px;
+		margin-bottom: 28px;
+	}
+
+	ul{
+		padding-left: 30px;
+		margin-bottom: 28px;
+	}
+
+	.product-card__price{
+		width: 100%;
+	}
+
+	.product-card__price p{
+		font-size: @fz24;
+		margin-top: -6px;
+		margin-left: 10px;
+	}
+
+
+}
 
 
 
