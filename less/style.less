@@ -17,6 +17,14 @@ ul{
 }
 
 
+h1{
+	font-size: @fz24;
+	color: @text-color;
+	font-family: @roboto;
+	margin-bottom: 40px;
+}
+
+
 .no-padding{
 	padding: 0;
 }
@@ -233,14 +241,12 @@ img{
 
 	& img{
 		max-width: 100%;
-		// vertical-align: middle;
-		// display: inline-block;
 		position: absolute;
 		top: 50%;
 		left: 0;
 		right: 0;
 		margin: auto;
-		transform: translateY(-54%);
+		transform: translateY(-60%);
 		z-index: -1;
 	}
 
@@ -353,6 +359,8 @@ img{
 
 .ready-solution{
 
+	margin-bottom: 70px;
+
 	.ready-solution__img-box{
 		position: relative;
 		display: inline-block;
@@ -427,7 +435,8 @@ img{
 
 .about-company{
 
-	padding: 130px 0;
+	padding-top: 60px;
+	padding-bottom: 130px;
 
 
 
@@ -590,18 +599,13 @@ img{
 
 
 .ready-solution__wedding{
-
-
+	margin-bottom: 28px;
+	padding: 27px 52px 27px 27px;
 
 	.product-card__title{
 		margin-bottom: 30px;
 	}
-
-	.bordered{
-		padding: 27px 52px 27px 27px;
-		margin-bottom: 28px;
-	}
-
+	
 	ul{
 		padding-left: 30px;
 		margin-bottom: 28px;
@@ -618,6 +622,39 @@ img{
 	}
 
 
+}
+
+.wedding-set__vip{
+	h2{
+		margin-top: 0;
+	}
+
+	.product-card__price p{
+		font-size: 36px;
+	}
+
+	.orange-order{
+		margin-bottom: 40px;
+	}
+
+	p.roboto-light__default{
+		text-indent: 30px;
+	}
+}
+
+.set-item{
+	.product-card__price{
+		margin-top: 15px;
+
+		p{
+			margin-bottom: 10px;
+		}
+	}
+
+			.roboto-light__default{
+			font-size: @fz24;
+			margin-bottom: 40px;
+		}
 }
 
 
