@@ -806,7 +806,17 @@ img {
 }
 .basket {
   width: 768px;
+  height: 540px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin: auto;
+  background-color: #fff;
   padding: 20px 0 0 0;
+  display: none;
 }
 .basket select {
   outline: 0;
@@ -924,6 +934,7 @@ img {
 .basket .delivery-form input,
 .basket .delivery-form label {
   display: inline;
+  width: auto;
 }
 .basket .delivery-form label {
   font-size: 14px;
@@ -942,6 +953,7 @@ img {
   margin-bottom: 31px;
 }
 .basket .delivery-form .basket-send label {
+  display: block;
   margin-left: 0;
   color: #656d78;
 }

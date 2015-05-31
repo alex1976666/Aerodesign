@@ -705,7 +705,17 @@ img{
 
 .basket{
 	width: 768px;
+	height: 540px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	margin: auto;
+	background-color: #fff;
 	padding: 20px 0 0 0;
+	display: none;
 
 	select{
 		outline: 0;
@@ -850,6 +860,7 @@ img{
 		}
 		input, label{
 			display: inline;
+			width: auto;
 		}
 
 		label{
@@ -872,6 +883,7 @@ img{
 			}
 
 			label{
+				display: block;
 				margin-left: 0;
 				color: #656d78;
 			}
@@ -913,6 +925,8 @@ img{
 			margin-top: 70px;
 		}
 	}
+
+
 
 
 
