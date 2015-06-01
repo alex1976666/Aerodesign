@@ -317,6 +317,7 @@ body {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 h1 {
   font-size: 24px;
@@ -925,7 +926,7 @@ img {
 }
 .basket .delivery-form {
   background-color: #fdfcfc;
-  padding: 30px 60px 35px 25px;
+  padding: 30px 60px 25px 25px;
 }
 .basket .delivery-form .second-title {
   font-size: 18px;
@@ -983,6 +984,34 @@ img {
   width: 200px;
   margin: 0 auto;
   margin-top: 70px;
+}
+.delivery .second-title {
+  margin-bottom: 70px;
+}
+.delivery p.roboto-light__default {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+.delivery .icon {
+  margin-right: 55px;
+}
+.delivery .product-card__price {
+  width: 100px;
+  display: inline-block;
+  margin-left: 30px;
+}
+.delivery .product-card__price p {
+  margin-left: 0;
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.delivery .product-card__price .icon-bage {
+  margin-right: 0;
+}
+.delivery .delivery-location {
+  margin-top: 55px;
 }
 .icon {
   background-image: url(../img/icons/spritesheet2.png);
