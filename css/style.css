@@ -430,6 +430,7 @@ img {
   border-radius: 7px;
   padding-right: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .mt24 {
   margin-top: 24px;
@@ -661,7 +662,7 @@ img {
   margin-right: 5px;
 }
 .form-box {
-  padding: 40px 15px 18px;
+  padding: 40px 15px 20px;
   width: 292px;
   position: relative;
   box-sizing: border-box;
@@ -1012,6 +1013,49 @@ img {
 }
 .delivery .delivery-location {
   margin-top: 55px;
+}
+.contacts-page .contact-data {
+  margin-bottom: 35px;
+}
+.contacts-page .contact-data .icon {
+  margin-left: 45px;
+  margin-right: 10px;
+}
+.contacts-page .contact-data .icon-phone {
+  margin-bottom: 7px;
+}
+.contacts-page .contact-data .icon-orange-loc {
+  margin-bottom: 7px;
+}
+.contacts-page .map {
+  margin-top: 45px;
+}
+.works .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.works .base-row {
+  margin-bottom: 23px;
+}
+.works .bordered {
+  padding: 25px 15px 10px;
+}
+.works .product-card__title {
+  display: block;
+  margin-bottom: 5px;
+}
+.works .roboto-light__default {
+  height: 145px;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 45px;
+  overflow: hidden;
+}
+.works .icon-orange-calendar {
+  margin-right: 20px;
+}
+.works .icon-orange-clock {
+  margin-right: 8px;
 }
 .icon {
   background-image: url(../img/icons/spritesheet2.png);
