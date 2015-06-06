@@ -1,21 +1,22 @@
 .jq-checkbox {
-	top: -1px;
-	width: 13px;
-	height: 13px;
-	border: 1px solid #C3C3C3;
-	border-radius: 3px;
-	background: #F6F6F6 url(data:image/gif;base64,R0lGODlhAQAMALMAAPHx8f7+/vv7+/j4+PX19fLy8vz8/Pn5+fb29vPz8/39/ff39wAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAABAAwAAAQJMCgjzliIpAIiADs=) repeat-x;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.05), inset -1px -1px #FFF, inset 1px -1px #FFF;
+	
+	background-image: url(../img/icons/spritesheet2.png);
+	background-repeat: no-repeat;
+	display: inline-block;
 	vertical-align: middle;
+	width: 20px;
+    height: 20px;
+    background-position: -3572px -3px;
 	cursor: pointer;
 }
 .jq-checkbox.checked .jq-checkbox__div {
-	width: 9px;
-	height: 9px;
-	margin: 2px 0 0 2px;
-	border-radius: 2px;
-	background: #666;
-	box-shadow: inset 0 -3px 6px #AAA;
+	background-image: url(../img/icons/spritesheet2.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	 width: 20px;
+    height: 20px;
+    background-position: -332px -3px;
 }
 .jq-checkbox.focused {
 	border: 1px solid #08C;
