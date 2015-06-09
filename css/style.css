@@ -1670,6 +1670,62 @@ form .helios-palitre .bordered {
 .size .roboto-regular__default {
   font-size: 18px;
 }
+.vova-kate .row {
+  margin-bottom: 40px;
+}
+.vova-kate .properties {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 50px;
+}
+.vova-kate .properties p {
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+.vova-kate .properties .icon-width {
+  width: 45px;
+  text-align: center;
+}
+.vova-kate .properties .icon {
+  margin-right: 15px;
+}
+.vova-kate .properties span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.vova-kate .roboto-light__default {
+  line-height: 30px;
+  text-indent: 35px;
+}
+.vova-kate .quick-order .row {
+  margin-bottom: 0;
+}
+.vova-kate .quick-order-text {
+  margin-left: 50px;
+}
+.vova-kate .product-card__title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.vova-kate #owl-demo .owl-next,
+.vova-kate .owl-prev {
+  top: -210px;
+}
+.vova-kate #owl-demo .item {
+  height: 340px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.vova-kate .owl-pagination {
+  display: none;
+}
+.vova-kate .subgallery div {
+  height: 175px;
+  overflow: hidden;
+}
+.vova-kate .subgallery-item {
+  border-radius: 7px;
+}
 .popup-palitre {
   background-color: #fff;
   padding-top: 30px;
@@ -1818,6 +1874,7 @@ form .helios-palitre .bordered {
   width: 21px;
   height: 21px;
   background-position: -966px -3px;
+  transform: scale(1.2);
 }
 .icon-orange-deliver {
   width: 42px;
