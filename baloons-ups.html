@@ -66,7 +66,7 @@
     	<main>
 
     	<div class="container">
-    		<div class="baloons-ups">
+    		<div class="catalog-baloons">
     			<div class="row">
 					<div class="col-xs-3 left-side-menu">
     					<div class="dropdown">
@@ -163,7 +163,7 @@
 
     					</div>
 
-    					<div class="search-result text-center">
+    					<div class="no-search-result text-center">
     						<p class="roboto-light__default">По вашему запросу ничего не найдено, попробуйте еще раз</p>
     						<button class="btn-green uppercase">сбросить фильтр</button>
     					</div>
@@ -255,6 +255,150 @@
 
 		<script src="js/jquery-2.1.3.min.js"></script>
 		<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+
+
+
+
+
+                    <!-- /////////////////////////////////////////
+                        /////////     BASKET           //////////
+                        ///////////////////////////////////////// -->
+
+
+
+        <div class="hover">
+            <div class="basket bordered form-box">
+            
+                <table>
+                    <tr class="table-title">
+                        <td>Название</td>
+                        <td>Цена</td>
+                        <td>Количество</td>
+                        <td>Сумма</td>
+                        <td><div class="close-round"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                            <div class="bordered"><img src="img/double-heart.png" alt="Сердце"></div>
+                            <a href="#" class="product-card__title">Сердце</a>
+            
+                        </td>
+            
+                        <td>
+                            <div class="product-card__price"><i class="icon icon-bage"></i> <p>300 Р</p><span>1 ШТ</span></div>
+                        </td>
+            
+                        <td>
+                            <div class="bordered">
+                                <div class="basket-counter">
+                                    <span>2</span>
+                                </div>
+                                <div class="basket-select">
+                                    <p><i class="icon icon-mini-arrow-up"></i></p>
+                                    <p><i class="icon icon-mini-arrow-down"></i></p>
+                                </div>
+                            </div>
+                        </td>
+            
+                        <td class="roboto-light__default">600 Р</td>
+            
+                        <td><div class="close-round__item"></div></td>
+                    </tr>
+            
+                    <tr>
+                        <td>
+                            
+                            <div class="bordered"><img src="img/baloons-stoyka.jpg" alt="Стойка"></div>
+                            <a href="#" class="product-card__title">Стойка</a>
+            
+                        </td>
+            
+                        <td>
+                            <div class="product-card__price"><i class="icon icon-bage"></i> <p>800 Р</p><span>1 ШТ</span></div>
+                        </td>
+            
+                        <td>
+                            <div class="bordered">
+                                <div class="basket-counter">
+                                    <span>2</span>
+                                </div>
+                                <div class="basket-select">
+                                    <p><i class="icon icon-mini-arrow-up"></i></p>
+                                    <p><i class="icon icon-mini-arrow-down"></i></p>
+                                </div>
+                            </div>
+                        </td>
+            
+                        <td class="roboto-light__default">1600 Р</td>
+            
+                        <td><div class="close-round__item"></div></td>
+                    </tr>
+            
+                    <tr>
+                        <td colspan=2></td>
+                        <td>К оплате</td>
+                        <td class="basket-summ">2200 Р</td>
+                        <td></td>
+                    </tr>
+            
+                </table>
+            
+                
+                
+            
+            <div class="delivery-form">
+            <form action="">
+                    <div class="row">
+            
+                        <div class="col-xs-6">
+                            
+                            <p class="second-title">Способ получения</p>
+            
+                            <p class="input-box">
+                                <input type="radio" name="delivery" id="pickup">
+                                <label for="pickup">Самовывоз</label>
+                            </p>
+                            <p class="input-box">
+                                <input type="radio" name="delivery" id="city">
+                                <label for="city">Доставка по городу</label>
+                            </p>
+                            <p class="input-box">
+                                <input type="radio" name="delivery" id="department">
+                                <label for="department">Доставка по ЛО</label>
+                            </p>
+            
+                            <select name="" id="">
+                                <option value="">Пушкин</option>
+                                <option value="">Павловск</option>
+                                <option value="">Колпино</option>
+                                <option value="">Гатчина</option>
+                                <option value="">Красное Село</option>
+                            </select>
+            
+                        </div>
+            
+                        <div class="col-xs-6 basket-send">
+                                      
+                              <label for="name">Имя</label>
+                              <input type="text" id="name" name="name" placeholder="Имя">
+                                      
+                              <label for="phone">Номер телефона</label>
+                              <input type="tel"  id="phone" name="phone" placeholder="Номер телефона">
+                                      
+                              <button type="submit" class="btn-green to-right"><span class="uppercase">отправить заказ</span></button>
+                            
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- /////////////////////////////////////////
+        /////////    END BASKET        //////////
+        ///////////////////////////////////////// -->
+
 		
 	</body>
 </html>
