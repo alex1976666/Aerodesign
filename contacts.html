@@ -38,11 +38,11 @@
 					<i class="icon icon-phone"></i>
 					+7 812 221 3454
 				</div>
-				<div class="callme"><a href="#">Перезвоните мне</a></div>
+				<div class="callme"><a href="#" class="call-me">Перезвоните мне</a></div>
 			</div>
 			<div class="col-xs-1 text-center">
 				<div class="to-right">
-					<a href="#"><i class="icon icon-basket"></i></a>
+					<a href="#" id="basket"><i class="icon icon-basket"></i></a>
 					<div>3400<span> Р</span></div>
 					<div class="quantity text-center">2</div>
 				</div>
@@ -51,13 +51,13 @@
 		<div class="row">
 			<nav class="main-nav">
 				<ul>
-					<li class="main-nav__item border-blue"><a href="#">Шарики</a></li>
+					<li class="main-nav__item border-blue"><a href="baloons.html">Шарики</a></li>
 					<li class="main-nav__item border-green"><a href="ready-solution.html">Готовые решения</a></li>
-					<li class="main-nav__item border-yellow"><a href="#">Услуги</a></li>
+					<li class="main-nav__item border-yellow"><a href="services.html">Услуги</a></li>
 					<li class="main-nav__item border-orange"><a href="our-works.html">Наши работы</a></li>
-					<li class="main-nav__item border-red"><a href="#">Печать</a></li>
-					<li class="main-nav__item border-yellow"><a href="#">Доставка</a></li>
-					<li class="main-nav__item border-green"><a href="#">Контакты</a></li>
+					<li class="main-nav__item border-red"><a href="print.html">Печать</a></li>
+					<li class="main-nav__item border-yellow"><a href="delivery.html">Доставка</a></li>
+					<li class="main-nav__item border-green"><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
 
@@ -109,6 +109,9 @@
 			<div class="col-xs-3"></div>
 		</div>
 
+		<!-- Карта -->
+
+
 		<div class="map">
 			<div class="container">
 
@@ -133,7 +136,8 @@
 
 					<div class="col-xs-3 bordered form-box">
 						<p class="roboto-light__default">Если у Вас остались вопросы, свяжитесь с нами</p>
-						
+
+
 							<!-- Спасибо, мы вам перезвоним средняя -->
 
 						<div class="form-box bordered recall-mid recall-mid__hover psr">
@@ -155,7 +159,7 @@
 							<label for="email">E-mail</label>
 							<input type="email" id="email" name="email" placeholder="e-mail">
 
-							<button type="submit" class="btn-green to-right">Позвоните мне</button>
+							<button type="submit" id="recall-mid" class="btn-green to-right">Позвоните мне</button>
 						</form>
 
 					</div>
@@ -165,75 +169,6 @@
 	</div>
 
 </div>
-
-</main>
-
-
-<footer>
-	<div class="container">
-		<div class="row">
-
-			<div class="col-xs-4 footer-adress text-center">
-
-				<i class="icon icon-orange-loc"></i>
-				
-					<div class="text-left">
-						<p class="numb">Санкт-Петербург,</p>
-						<p class="numb">ул. Благодатная, д. 5 корп. 5, кв. 17</p>
-					</div>
-				
-			</div>
-
-			<div class="col-xs-2">
-				<div class="footer-phones text-center">
-					<i class="icon icon-iphone"></i><span class="numb">+7 905 221 3454</span><br>
-					<i class="icon icon-phone"></i><span class="numb">+7 812 221 3454</span>
-				</div>
-			</div>
-
-			<div class="col-xs-3 text-right footer-mail">
-				<i class="icon icon-orange-mail"></i>
-				
-					<div class="text-left">
-						<p class="numb">yletspb@gmail.com</p><br>
-						<p class="numb">Напишите нам</p>
-					</div>
-				
-			</div>
-
-			<div class="col-xs-3 social">
-				<div class="text-right">
-					<a href="#"><i class="icon icon-vk"></i></a>
-					<a href="#"><i class="icon icon-f"></i></a>
-					<a href="#"><i class="icon icon-instagramm"></i></a>
-					<a href="#"><i class="icon icon-twitter"></i></a>
-
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-		<!-- Footer nav -->
-
-		<div class="grey-line"></div>
-
-	<div class="container">
-
-		<nav class="footer-nav">
-			<ul>
-				<li class="footer-nav__item"><a href="#">Шарики</a></li>
-				<li class="footer-nav__item"><a href="ready-solution.html">Готовые решения</a></li>
-				<li class="footer-nav__item"><a href="#">Услуги</a></li>
-				<li class="footer-nav__item"><a href="#">Наши работы</a></li>
-				<li class="footer-nav__item"><a href="#">Печать</a></li>
-				<li class="footer-nav__item"><a href="#">Доставка</a></li>
-				<li class="footer-nav__item"><a href="#">Контакты</a></li>
-			</ul>
-		</nav>
-	</div>
-</footer>
-
 
 
 			<!-- /////////////////////////////////////////
@@ -253,7 +188,7 @@
 				<td>Сумма</td>
 				<td><div class="close-round"></div></td>
 			</tr>
-			<tr>
+			<tr class="basket-item">
 				<td>
 					
 					<div class="bordered"><img src="img/double-heart.png" alt="Сердце"></div>
@@ -279,10 +214,10 @@
 	
 				<td class="roboto-light__default">600 Р</td>
 	
-				<td><div class="close-round__item"></div></td>
+				<td><div class="close__item"></div></td>
 			</tr>
 	
-			<tr>
+			<tr class="basket-item">
 				<td>
 					
 					<div class="bordered"><img src="img/baloons-stoyka.jpg" alt="Стойка"></div>
@@ -308,7 +243,7 @@
 	
 				<td class="roboto-light__default">1600 Р</td>
 	
-				<td><div class="close-round__item"></div></td>
+				<td><div class="close__item"></div></td>
 			</tr>
 	
 			<tr>
@@ -376,14 +311,20 @@
 ///////////////////////////////////////// -->
 
 
+
 <!-- /////////////////////////////////////////
 ////////      Позвоните мне      //////////
 ///////////////////////////////////////// -->
 
 
-<div class="bordered form-box recall-mini text-center">
+<div class="bordered form-box recall-mini text-center psr none">
 
 	<div class="close-round"></div>
+
+	<div class="form-box bordered recall-mini recall-mini__hover">
+	<div class="close-round"></div>
+		<p class="roboto-regular__default text-center">Спасибо за заявку,<br> мы вам перезвоним</p>
+	</div>
   
     <form action="#" class="clearfix">
   
@@ -391,10 +332,10 @@
       <input type="text" id="name" name="name" placeholder="Имя">
   
       <label for="phone" class="to-left">Номер телефона</label>
-      <input class="input-accept" type="tel"  id="phone" name="phone" placeholder="Номер телефона">
+      <input type="tel"  id="phone" name="phone" placeholder="Номер телефона">
   
   
-      <button type="submit" class="btn-green">Позвоните мне</button>
+      <button type="submit" class="btn-green" id="call-me-2">Позвоните мне</button>
     </form>
   
   </div>
@@ -403,6 +344,138 @@
  <!-- /////////////////////////////////////////
 ////////  End  Позвоните мне      //////////
 ///////////////////////////////////////// -->
-	
+
+
+<div class="hover-mate"></div>
+
+</main>
+
+
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xs-4 footer-adress text-center">
+
+				<i class="icon icon-orange-loc"></i>
+				
+					<div class="text-left">
+						<p class="numb">Санкт-Петербург,</p>
+						<p class="numb">ул. Благодатная, д. 5 корп. 5, кв. 17</p>
+					</div>
+				
+			</div>
+
+			<div class="col-xs-2">
+				<div class="footer-phones text-center">
+					<i class="icon icon-iphone"></i><span class="numb">+7 905 221 3454</span><br>
+					<i class="icon icon-phone"></i><span class="numb">+7 812 221 3454</span>
+				</div>
+			</div>
+
+			<div class="col-xs-3 text-right footer-mail">
+				<i class="icon icon-orange-mail"></i>
+				
+					<div class="text-left">
+						<p class="numb">yletspb@gmail.com</p><br>
+						<p class="numb">Напишите нам</p>
+					</div>
+				
+			</div>
+
+			<div class="col-xs-3 social">
+				<div class="text-right">
+					<a href="#"><i class="icon icon-vk"></i></a>
+					<a href="#"><i class="icon icon-f"></i></a>
+					<a href="#"><i class="icon icon-instagramm"></i></a>
+					<a href="#"><i class="icon icon-twitter"></i></a>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+		<!-- Footer nav -->
+
+		<div class="grey-line"></div>
+
+	<div class="container">
+
+		<nav class="footer-nav">
+			<ul>
+				<li class="footer-nav__item"><a href="baloons.html">Шарики</a></li>
+				<li class="footer-nav__item"><a href="ready-solution.html">Готовые решения</a></li>
+				<li class="footer-nav__item"><a href="services.html">Услуги</a></li>
+				<li class="footer-nav__item"><a href="our-works.html">Наши работы</a></li>
+				<li class="footer-nav__item"><a href="print.html">Печать</a></li>
+				<li class="footer-nav__item"><a href="delivery.html">Доставка</a></li>
+				<li class="footer-nav__item"><a href="contacts.html">Контакты</a></li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+
+
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/jquery.formstyler.js"></script>
+
+<script>
+(function($) {
+    $(function() {
+
+      $('input, select').styler();
+
+    });
+    })(jQuery);
+
+</script>
+
+
+<script>
+$(document).ready(function(){
+
+
+    // Корзина
+
+    $("#basket").click(function(){
+        $(".basket").fadeIn();
+        $(".hover-mate").fadeIn();
+    });
+
+    // Позвоните мне
+
+    $(".call-me").click(function(e){
+        e.preventDefault();
+        $(".none").fadeIn();
+        $(".hover-mate").fadeIn();
+    });
+
+
+    $("#call-me-2").click(function(e){
+        e.preventDefault();
+        $(".recall-mini__hover").fadeIn();
+    });
+
+
+    // Спасибо, мы вам перезвоним средняя
+
+    $("#recall-mid").click(function(e){
+    	e.preventDefault();
+    	$(".recall-mid__hover").fadeIn();
+    });
+
+
+
+
+    // Закрытие всплывающих окон
+
+    $(".close-round, .hover-mate").click(function(){
+        $(".basket, .recall-mid__hover, .recall-mini, .recall-mini__hover, .product-order__mid, .product-order__mid-hover, .product-order__big, .product-order__big-hover, .hover-mate").fadeOut();
+    });
+});
+</script>
+
 </body>
 </html>
