@@ -9,9 +9,9 @@
 
 		<link rel='stylesheet' href='css/normalize.css' type='text/css'>
 		<link rel="stylesheet" href="css/jquery.formstyler.css">
+		<link rel="stylesheet" href="css/swiper.css">
 		<link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css" type="text/css">
-		
 	</head>
 <body>
 
@@ -134,7 +134,7 @@
 
 		<h2 class="product-card__title">Галерея</h2>
 			
-				<div id="owl-demo" class="owl-carousel">
+				<!-- <div id="owl-demo" class="owl-carousel">
 				 
 				  <div class="item">
 					<div class="row">
@@ -157,9 +157,9 @@
 					  		    	
 					  		    </div>
 					  		  </div>
-				</div>
+				</div> -->
 
-				<div class="row">
+				<!-- <div class="row">
 					<div class="subgallery">
 						<div class="col-xs-3">
 							<div class="subgallery-item">
@@ -182,7 +182,35 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
+
+		<!-- Swiper -->
+		    <div class="swiper-container gallery-top">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
+		            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
+		            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
+		            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
+		            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
+		        </div>
+
+		        		     <div class="swiper-button-next"></div>
+		            		<div class="swiper-button-prev"></div>
+		        
+		    </div>
+
+		     
+
+		    <div class="swiper-container gallery-thumbs">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
+		            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
+		            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
+		            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
+		            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
+		        </div>
+		    </div>
+
 			
 		</div>				
 	</div>
@@ -435,6 +463,7 @@
 
 		<script src="js/jquery-2.1.3.min.js"></script>
 		<script src="js/jquery.formstyler.js"></script>
+		<script src="js/swiper.js"></script>
 
 		<script>
 		(function($) {
@@ -482,6 +511,25 @@
 		    });
 		});
 		</script>
+
+		<!-- Initialize Swiper -->
+		    <script>
+		        var galleryTop = new Swiper('.gallery-top', {
+		            nextButton: '.swiper-button-next',
+		            prevButton: '.swiper-button-prev',
+		            spaceBetween: 10,
+		        });
+		        var galleryThumbs = new Swiper('.gallery-thumbs', {
+		            spaceBetween: 10,
+		            centeredSlides: true,
+		            slidesPerView: 'auto',
+		            touchRatio: 0.2,
+		            slideToClickedSlide: true
+		        });
+		        galleryTop.params.control = galleryThumbs;
+		        galleryThumbs.params.control = galleryTop;
+		        
+	        </script>
 
 
 

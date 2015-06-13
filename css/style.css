@@ -309,6 +309,7 @@ footer p {
   line-height: 66px;
 }
 body {
+  height: 100%;
   min-width: 1170px;
   color: #434a54;
 }
@@ -1103,8 +1104,11 @@ img {
   margin-top: 220px;
 }
 .palitres {
-  width: 530px;
-  height: 510px;
+  width: 591px;
+  height: 580px;
+  padding: 40px 25px 30px;
+  border-radius: 8px;
+  font-size: 0;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -1114,6 +1118,44 @@ img {
   margin: auto;
   background-color: #fff;
   display: none;
+}
+.palitres .palitres-item {
+  width: 60px;
+  height: 115px;
+  margin-bottom: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.palitres .palitres-item img {
+  width: 60px;
+  height: 70px;
+  display: block;
+  margin-bottom: 3px;
+}
+.palitres .palitres-item:hover {
+  border: 1px solid #ebebeb;
+  padding: 0;
+}
+.palitres .palitres-item p {
+  width: 57px;
+  font-size: 10px;
+  margin-bottom: 0;
+  margin-top: 3px;
+  font-weight: 600;
+}
+.palitres .close-round {
+  top: 15px;
+  right: 15px;
+}
+.palitres .btn-green {
+  clear: both;
+}
+.palitres .choice {
+  border: 1px solid #67bc25;
 }
 .product-order__big {
   width: 550px!important;
@@ -1748,40 +1790,35 @@ form .helios-palitre .bordered {
   text-align: center;
   margin-bottom: 45px;
 }
-.vova-kate #owl-demo .owl-next,
-.vova-kate .owl-prev {
-  top: -210px;
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
-.vova-kate #owl-demo .item {
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+.gallery-top {
   height: 340px;
-  border-radius: 7px;
-  overflow: hidden;
+  width: 100%;
 }
-.vova-kate .owl-pagination {
-  display: none;
+.gallery-thumbs {
+  height: 200px;
+  box-sizing: border-box;
+  padding: 25px 0;
 }
-.vova-kate .subgallery div {
-  height: 175px;
-  overflow: hidden;
+.gallery-thumbs .swiper-slide {
+  width: 235px;
+  height: 150px;
+  opacity: 0.4;
+  border-radius: 6px;
 }
-.vova-kate .subgallery-item {
-  border-radius: 7px;
-}
-.popup-palitre {
-  background-color: #fff;
-  padding-top: 30px;
-  width: 530px;
-  height: 530px;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  display: none;
-}
-.popup-palitre .close-round {
-  top: 0;
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
 }
 .icon {
   background-image: url(../img/icons/spritesheet2.png);

@@ -4,6 +4,7 @@
 @import "footer.less";
 
 body{
+   height: 100%;
    min-width: 1170px;
    color: @text-color;
 }
@@ -1079,8 +1080,11 @@ img{
 
 
       .palitres{
-         width: 530px;
-         height: 510px;
+         width: 591px;
+         height: 580px;
+         padding: 40px 25px 30px;
+         border-radius: 8px;
+         font-size: 0;
          position: fixed;
           top: 0;
           bottom: 0;
@@ -1090,6 +1094,51 @@ img{
           margin: auto;
           background-color: #fff;
           display: none;
+
+          .palitres-item{
+            width: 60px;
+            height: 115px;
+            margin-bottom: 4px;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 1px;
+            text-align: center;
+            border-radius: 6px;
+            cursor: pointer;
+
+            img{
+               width: 60px;
+               height: 70px;
+               display: block;
+               margin-bottom: 3px;
+            }
+
+            &:hover{
+               border: 1px solid #ebebeb;
+               padding: 0;
+            }
+
+            p{
+               width: 57px;
+               font-size: 10px;
+               margin-bottom: 0;
+               margin-top: 3px;
+               font-weight: 600;
+            }
+          }
+
+          .close-round{
+            top: 15px;
+            right: 15px;
+          }
+
+          .btn-green{
+            clear: both;
+          }
+
+          .choice{
+            border: 1px solid #67bc25;
+          }
       }
 
    
@@ -1966,59 +2015,44 @@ form .helios-palitre{
          margin-bottom: 45px;
       }
 
-      #owl-demo .owl-next, .owl-prev{
-         top: -210px;
-      }
-      
-      #owl-demo .item{
-         height: 340px;
-         border-radius: 7px;
-         overflow: hidden;
-      }
-
-      #owl-demo .item img{
-         // height: 340px;
-      }
-
-      .owl-pagination{
-         display: none;
-      }
-
-      .subgallery div{
-         height: 175px;
-         overflow: hidden;
-      }
-
-      .subgallery-item{
-         border-radius: 7px;
-      }
 
 }
 
+// Swiper css
 
 
+.swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+        border-radius: 6px;
+    }
+    .gallery-top {
+        height: 340px;
+        width: 100%;
+    }
 
-/////////////////////////////////////////
-////////  ВСЯ ПАЛИТРА ШАРИКОВ  //////////
-////////////////////////////////////////
+    .gallery-thumbs {
+        height: 200px;
+        box-sizing: border-box;
+        padding: 25px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+        width: 235px;
+        height: 150px;
+        opacity: 0.4;
+        border-radius: 6px;
+    }
+    .gallery-thumbs .swiper-slide-active {
+        opacity: 1;
+    }
 
-.popup-palitre{
-   background-color: #fff;
-   padding-top: 30px;
-   width: 530px;
-   height: 530px;
-   position: fixed;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   margin: auto;
-   display: none;
-
-   .close-round{
-      top: 0;
-   }
-}
 
 
 
