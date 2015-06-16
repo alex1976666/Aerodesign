@@ -75,21 +75,18 @@ header .quantity:after {
 }
 header .main-nav {
   border-radius: 6px;
-  display: table;
-  width: 100%;
   border: 1px solid #e1e1e1;
   box-shadow: 0 2px 3px #f0f0f0;
-  overflow: hidden;
   margin-top: 15px;
+  overflow: hidden;
 }
 header .main-nav__item {
-  width: 167px;
   height: 75px;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  box-sizing: border-box;
   position: relative;
+  padding-top: 5px;
 }
 header .main-nav__item:before {
   content: "";
@@ -123,19 +120,30 @@ header .main-nav__item:nth-child(5):before {
 header .main-nav__item a {
   font-size: 18px;
   line-height: 75px;
-  color: #434a54;
+  color: #434a54 !important;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   border-right: 1px solid #f4f2f2;
   display: block;
   transition: .3s;
   white-space: nowrap;
+  padding: 0;
 }
-header .main-nav__item a:last-child a {
+header .main-nav__item:last-child a {
   border-right: none;
 }
 header .main-nav__item:hover a {
-  font-weight: 400;
+  color: #434a54 !important;
+  text-decoration: none;
+}
+header .navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 767px) {
+  header .main-nav__item {
+    display: block;
+  }
 }
 .btn-green {
   color: #fff;
@@ -310,7 +318,6 @@ footer p {
 }
 body {
   height: 100%;
-  min-width: 1170px;
   color: #434a54;
 }
 * {

@@ -1,3 +1,4 @@
+
 header{
 	margin-top: 15px;
 	margin-bottom: 40px;
@@ -91,22 +92,19 @@ header{
 
 	.main-nav{
 		border-radius: 6px;
-		display: table;
-		width: 100%;
 		border: 1px solid #e1e1e1;
 		box-shadow: 0 2px 3px #f0f0f0;
-		overflow: hidden;
 		margin-top: 15px;
+		overflow: hidden;
 	}
 
 	.main-nav__item{
-		width: 167px;
 		height: 75px;
 		display: table-cell;
 		text-align: center;
 		vertical-align: middle;
-		box-sizing: border-box;
 		position: relative;
+		padding-top: 5px;
 	}
 
 
@@ -149,25 +147,47 @@ header{
 	.main-nav__item a{	
 		font-size: @fz18;
 		line-height: 75px;
-		color: @text-color;
+		color: @text-color!important;
 		font-family: @roboto;
 		font-weight: @light;
 		border-right: 1px solid #f4f2f2;
 		display: block;
 		transition: .3s;
 		white-space: nowrap;
-		
-			&:last-child a{
-		border-right: none;
+		padding: 0;
 		}
+		.main-nav__item:last-child a{
+		border-right: none;
 
 	}
 
 	.main-nav__item:hover a{
-	font-weight: @regular;
+	color: @text-color!important;
+	text-decoration: none;
 	}	
 
+	.navbar-collapse{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+
 }
+
+
+// Media
+
+    @media(max-width: 767px) {
+ 
+  header .main-nav__item{
+     display: block;
+   }
+  
+}
+
+
+
+
 
 
 
