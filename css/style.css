@@ -133,8 +133,8 @@ header .main-nav__item:last-child a {
   border-right: none;
 }
 header .main-nav__item:hover a {
-  color: #434a54 !important;
-  text-decoration: none;
+  color: #434a54;
+  text-decoration: underline;
 }
 header .navbar-collapse {
   padding-left: 0;
@@ -150,6 +150,21 @@ header .navbar-collapse {
   header .federal-numb,
   header .direct-numb {
     font-size: 13px;
+  }
+  header .col-xs-5 {
+    text-align: center;
+  }
+  header .numb {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  header .header-slogan {
+    font-size: 17px;
+  }
+  header .logo span {
+    font-size: 50px;
   }
 }
 .btn-green {
@@ -476,9 +491,12 @@ img {
 .light-grey {
   color: #aab2bd;
 }
+#owl-demo {
+  text-align: center;
+}
 #owl-demo .item img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .slider-container {
@@ -794,6 +812,12 @@ img {
 }
 .form-box input:last-of-type {
   margin-bottom: 30px;
+}
+.material > div {
+  float: left;
+}
+.size > div {
+  float: left;
 }
 .left-side-menu {
   min-height: 410px;
@@ -1260,7 +1284,6 @@ img {
 }
 .delivery p.roboto-light__default {
   display: inline-block;
-  vertical-align: middle;
   margin-bottom: 30px;
 }
 .delivery .icon {
@@ -1446,7 +1469,7 @@ img {
 }
 .helios-ballon .product-card__price {
   width: auto;
-  margin-top: 75px;
+  margin-top: 55px;
   margin-bottom: 30px;
 }
 .helios-ballon .product-card__price p {
@@ -1456,6 +1479,7 @@ img {
   font-size: 18px;
 }
 .helios-ballon .volume {
+  margin-top: 20px;
   margin-bottom: 45px;
 }
 .helios-ballon .volume .roboto-regular__default {
@@ -1477,8 +1501,12 @@ img {
 .services .service-card .roboto-light__default {
   height: 20px;
 }
+.services .service-card a {
+  display: block;
+}
 .services .service-card img {
   height: 160px;
+  display: inline-block;
   margin-bottom: 8px;
 }
 .services .bordered {
@@ -1489,6 +1517,7 @@ img {
   top: 15px;
   right: -3px;
   font-size: 14px;
+  margin-right: 0;
   color: #fff;
   width: 250px;
   padding: 6px;
@@ -1534,6 +1563,7 @@ img {
   margin-bottom: 45px;
 }
 .figure-heart .bordered {
+  text-align: center;
   height: 450px;
   padding: 20px;
 }
@@ -1549,6 +1579,7 @@ img {
 }
 .figure-heart #owl-demo .item img {
   display: inline-block;
+  max-height: 100%;
 }
 .figure-heart .owl-carousel {
   font-size: 0;
@@ -1558,7 +1589,8 @@ img {
   width: 150px;
   height: 150px;
   display: inline-block;
-  margin-right: 15px;
+  vertical-align: middle;
+  margin-right: 1.3rem;
   box-sizing: border-box;
   padding: 10px;
 }
@@ -1713,22 +1745,35 @@ img {
   margin-top: 50px;
   margin-bottom: 45px;
 }
+.sort p {
+  margin-bottom: 0;
+}
 .sort .bordered {
   padding: 20px;
 }
 .sort .by-popular {
   margin-left: 100px;
+  width: 30%;
 }
 .sort .by-popular a {
   display: inline-block;
   margin-right: 30px;
 }
+.sort .by-popular .roboto-light__default {
+  display: inline-block;
+  margin-right: 20px;
+}
 .sort .by-price {
   margin-left: 40px;
+  width: 30%;
 }
 .sort .by-price a {
   display: inline-block;
   margin-right: 30px;
+}
+.sort .by-price .roboto-light__default {
+  display: inline-block;
+  margin-right: 20px;
 }
 .sort .bordered div {
   display: inline-block;
@@ -1840,6 +1885,9 @@ form .helios-palitre .bordered {
 .gallery-thumbs .swiper-slide-active {
   opacity: 1;
 }
+.left-side-menu .mt {
+  margin-top: 70px;
+}
 @media (max-width: 768px) {
   .slider-title {
     font-size: 16px;
@@ -1898,12 +1946,64 @@ form .helios-palitre .bordered {
     margin-right: 30px;
   }
   .map .form-box {
+    width: auto;
+    margin-left: 15px;
+  }
+  .left-side-menu {
+    text-align: center;
+  }
+  .left-side-menu .roboto-light__default {
+    font-size: 14px;
+  }
+  .sort {
+    font-size: 0;
+  }
+  .sort p.roboto-light__default {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .sort span.roboto-light__default {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .sort .bordered .by-popular {
+    width: 100%;
+    display: block;
+    margin-left: 5px;
+  }
+  .sort .bordered .by-price {
+    width: 100%;
+    display: block;
+    margin-left: 5px;
+  }
+  .sort .select-arrow {
+    width: 20px;
+    height: 30px;
+  }
+  .xs-right {
     float: right;
+  }
+  .page {
+    text-align: center;
+  }
+  .green-label,
+  .grey-lable {
+    font-size: 10px;
+    padding: 5px 8px;
+    border-radius: 6px;
+  }
+  .close-label {
+    width: 7px;
+    height: 7px;
+    background-size: 7px;
   }
   footer {
     font-size: 12px;
   }
-  footer .row .col-sm-6 {
+  footer .footer-adress {
     text-align: left;
     padding: 0 15px;
   }
@@ -1912,6 +2012,9 @@ form .helios-palitre .bordered {
   }
   footer .footer-phones {
     text-align: right;
+  }
+  footer .footer-mail {
+    text-align: left;
   }
   .footer-nav .footer-nav__item a {
     font-size: 12px;
@@ -1962,15 +2065,15 @@ form .helios-palitre .bordered {
   .product-order__big .orange-order {
     margin-top: 15px;
   }
+  .product-order__big .product-card__price p {
+    font-size: 14px;
+  }
+  .product-order__big .product-card__price span {
+    font-size: 12px;
+  }
   .product-order__big .second-title {
     font-size: 18px;
     margin-bottom: 10px;
-  }
-  .product-card__price p {
-    font-size: 14px;
-  }
-  .product-card__price span {
-    font-size: 12px;
   }
   .product-order__big .input-box {
     margin-bottom: 5px;
@@ -1978,6 +2081,138 @@ form .helios-palitre .bordered {
   .form-box input {
     margin-bottom: 5px;
     padding: 5px 13px;
+  }
+  .contacts-page .contact-data span {
+    font-size: 13px;
+  }
+  .contacts-page .contact-data .icon {
+    margin-left: 15px;
+  }
+  .delivery-adv {
+    text-align: center;
+  }
+  .delivery .icon {
+    display: block;
+    margin-right: 10px;
+  }
+  .delivery .product-card__price {
+    width: auto;
+    margin-left: 5px;
+  }
+  .delivery .product-card__price p {
+    font-size: 12px;
+  }
+  .delivery .roboto-light__default {
+    font-size: 10px;
+  }
+  .delivery .roboto-regular__default {
+    font-size: 12px;
+  }
+  .figure-heart .owl-carousel .bordered {
+    width: 31%;
+  }
+  .product-card__order-section .to-right {
+    float: none;
+    margin-left: 15px;
+  }
+  .helios-palitre {
+    text-align: center;
+  }
+  .look-palitre {
+    font-size: 12px;
+  }
+  .material > div {
+    float: none;
+  }
+  .size > div {
+    float: none;
+  }
+  .palitres {
+    width: 240px;
+    height: auto;
+    overflow-y: auto;
+  }
+  .palitres .palitres-item {
+    width: 78px;
+    height: 88px;
+    margin-bottom: 35px;
+  }
+  .palitres .palitres-item img {
+    width: 78px;
+    height: 88px;
+  }
+  .print-content .grey-form .roboto-regular__default {
+    display: inline-block;
+  }
+  .grey-form .fill-discount p {
+    font-size: 16px;
+  }
+  .print-content .grey-form .light-grey {
+    margin-bottom: 10px;
+  }
+  .print .grey-form .bordered {
+    margin-bottom: 10px;
+  }
+  .print .print-about .roboto-light__default {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .print .grey-form .jq-radio {
+    margin-right: 10px;
+  }
+  .print .print-order {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .print .print-price {
+    font-size: 22px;
+    margin-left: 0;
+    display: block;
+  }
+  .print .print-order .orange-order {
+    float: none;
+    margin-top: 20px;
+  }
+  .vova-kate .quick-order-text {
+    margin-left: 0;
+  }
+  .vova-kate .properties p {
+    margin-left: 5px;
+  }
+  .vova-kate .properties .roboto-light__default {
+    text-indent: 0;
+  }
+  .vova-kate .properties .roboto-regular__default {
+    margin-left: 10px;
+  }
+  .vova-kate .roboto-light__default {
+    font-size: 12px;
+  }
+  .vova-kate .roboto-regular__default {
+    font-size: 12px;
+  }
+  .ready-solution__wedding {
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+  .wedding-set__standart .pl-0 {
+    padding-left: 15px;
+  }
+  .wedding-set__standart .pr-0 {
+    padding-right: 15px;
+  }
+  .wedding-set__standart .xs-margin {
+    margin-bottom: 20px;
+  }
+  .wedding-set__standart .price-box {
+    margin-top: 30px;
+  }
+  .set-item .product-card__price p {
+    font-size: 24px;
+  }
+  .wedding-set__vip,
+  .xs-margin {
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2034,8 +2269,95 @@ form .helios-palitre .bordered {
   .footer-nav .footer-nav__item a {
     font-size: 12px;
   }
+  footer .footer-adress {
+    padding-right: 15px;
+  }
   .basket {
     width: 700px;
+  }
+  .sort {
+    font-size: 0;
+  }
+  .sort p.roboto-light__default {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .sort span.roboto-light__default {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .sort .bordered .by-popular {
+    width: 100%;
+    display: block;
+    margin-left: 5px;
+  }
+  .sort .bordered .by-price {
+    width: 100%;
+    display: block;
+    margin-left: 5px;
+  }
+  .xs-right {
+    float: right;
+  }
+  .contacts-page .roboto-regular__default {
+    font-size: 16px;
+  }
+  .contacts-page .roboto-light__default {
+    font-size: 16px;
+  }
+  .contacts-page .contact-data span {
+    font-size: 16px;
+  }
+  .figure-heart .owl-carousel .bordered {
+    width: 31%;
+  }
+  .material > div {
+    float: none;
+  }
+  .size > div {
+    float: none;
+  }
+  .look-palitre {
+    font-size: 12px;
+  }
+  .helios-ballon .product-card__price p {
+    font-size: 26px;
+  }
+  .helios-ballon .product-card__price span {
+    font-size: 16px;
+  }
+  .print-content .grey-form .light-grey {
+    margin-bottom: 10px;
+  }
+  .print .grey-form .bordered {
+    margin-bottom: 10px;
+  }
+  .print .grey-form .jq-radio {
+    margin-right: 10px;
+  }
+  .print .print-order {
+    margin-top: 30px;
+  }
+  .wedding-set__standart ul li span.roboto-light__default {
+    font-size: 14px;
+  }
+  .wedding-set__vip ul li span.roboto-light__default {
+    font-size: 18px;
+  }
+  .wedding-set__vip,
+  .wedding-set__standart .price-box {
+    margin-top: 30px;
+  }
+  .wedding-set__vip .product-card__price p,
+  .wedding-set__standart .product-card__price p {
+    font-size: 24px;
+  }
+  .wedding-set__vip,
+  .xs-margin {
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2065,6 +2387,42 @@ form .helios-palitre .bordered {
   }
   .ready-solution__item {
     margin-bottom: 25px;
+  }
+  .footer-adress {
+    padding-right: 20px;
+  }
+  .sort .by-popular {
+    width: 38%;
+    margin-left: 50px;
+  }
+  .figure-heart .owl-carousel .bordered {
+    width: 31%;
+    max-height: 100%;
+  }
+  .look-palitre {
+    font-size: 12px;
+  }
+  .form-bg {
+    padding: 15px;
+  }
+  .material > div {
+    float: none;
+  }
+  .size > div {
+    float: none;
+  }
+  .print .grey-form .jq-radio {
+    margin-right: 10px;
+  }
+  .print .print-order {
+    margin-top: 30px;
+  }
+  .print .print-about .bordered {
+    margin-top: 22px;
+  }
+  .wedding-set__vip,
+  .xs-margin {
+    margin-bottom: 20px;
   }
 }
 .icon {

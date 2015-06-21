@@ -199,9 +199,14 @@ img{
 
 // Owl-carousel
 
+#owl-demo{
+   text-align: center;
+}
+
 #owl-demo .item img{
     display: block;
-    width: 100%;
+    max-width: 100%;
+    // width: 100%;
     height: auto;
 }
 
@@ -639,6 +644,13 @@ img{
       }
 
    }
+}
+
+.material>div{
+   float: left;
+}
+.size>div{
+   float: left;
 }
 
 
@@ -1293,7 +1305,6 @@ img{
 
    p.roboto-light__default{
       display: inline-block;
-      vertical-align: middle;
       margin-bottom: 30px;
    }
 
@@ -1473,6 +1484,8 @@ img{
    padding: 20px 40px;
    border-radius: 10px;
 
+
+
    .roboto-light__default{
       font-size: 14px;
    }
@@ -1538,6 +1551,7 @@ img{
 }
 
 
+
 /////////////////////////////////////////
 /////////   Баллон с гелием    //////////
 ////////////////////////////////////////
@@ -1558,7 +1572,7 @@ img{
 
    .product-card__price{
       width: auto;
-      margin-top: 75px;
+      margin-top: 55px;
       margin-bottom: 30px;
 
       p{
@@ -1571,6 +1585,7 @@ img{
    }
 
    .volume{
+      margin-top: 20px;
       margin-bottom: 45px;
 
       .roboto-regular__default{
@@ -1604,10 +1619,14 @@ img{
       .roboto-light__default{
          height: 20px;
       }
+      a{
+         display: block;
+      }
    }
 
    .service-card img{
       height: 160px;
+      display: inline-block;
       margin-bottom: 8px;
    }
    .bordered{
@@ -1618,6 +1637,7 @@ img{
       top: 15px;
       right: -3px;
       font-size: 14px;
+      margin-right: 0;
       color: #fff;
       width: 250px;
       padding: 6px;
@@ -1677,6 +1697,7 @@ img{
    }
    
    .bordered{
+      text-align: center;
       height: 450px;
       padding: 20px;
       &:before{
@@ -1694,6 +1715,7 @@ img{
 
    #owl-demo .item img {
          display: inline-block;
+         max-height: 100%;
       }
 
    .owl-carousel{
@@ -1706,7 +1728,8 @@ img{
          width: 150px;
          height: 150px;
          display: inline-block;
-         margin-right: 15px;
+         vertical-align: middle;
+         margin-right: 1.3rem;
          box-sizing: border-box;
          padding: 10px;
 
@@ -1905,21 +1928,35 @@ img{
   margin-top: 50px;
   margin-bottom: 45px;
 
+  p{
+   margin-bottom: 0;
+  }
+
   .bordered{
     padding: 20px;
   }
   .by-popular{
     margin-left: 100px;
+    width: 30%;
     a{
       display: inline-block;
       margin-right: 30px;
     }
+    .roboto-light__default{
+      display: inline-block;
+      margin-right: 20px;
+    }
   }
   .by-price{
     margin-left: 40px;
+    width: 30%;
     a{
       display: inline-block;
       margin-right: 30px;
+    }
+    .roboto-light__default{
+      display: inline-block;
+      margin-right: 20px;
     }
   }
   .bordered div{
@@ -2063,6 +2100,9 @@ form .helios-palitre{
         opacity: 1;
     }
 
+   .left-side-menu .mt{
+      margin-top: 70px;
+   }
 
 
 
@@ -2070,7 +2110,7 @@ form .helios-palitre{
     // XS
 
 
-         @media(max-width: 768px){
+         @media(max-width: 768px) {
 
 
             // slider
@@ -2152,8 +2192,73 @@ form .helios-palitre{
    }
    
    .map .form-box{
+      width: auto;
+      margin-left: 15px;
+   }
+
+   // Baloons
+
+   .left-side-menu{
+      text-align: center;
+   }
+
+   .left-side-menu .roboto-light__default{
+      font-size: @fz18 - 4;
+   }
+   
+
+   .sort{
+      font-size: 0;
+   }
+   .sort p.roboto-light__default{
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 12px;
+   }
+   .sort span.roboto-light__default{
+      display: block;
+      font-weight: 400;
+      font-size: 12px;
+      margin-bottom: 20px;
+   }
+
+   
+   .sort .bordered .by-popular{
+      width: 100%;
+      display: block;
+      margin-left: 5px;
+   } 
+   .sort .bordered .by-price{
+      width: 100%;
+      display: block;
+      margin-left: 5px;
+   }
+   .sort .select-arrow{
+      width: 20px;
+      height: 30px;
+   }
+   .xs-right{
       float: right;
    }
+   .page{
+      text-align: center;
+   }
+   
+   .green-label, .grey-lable{
+      font-size: 10px;
+      padding: 5px 8px;
+      border-radius: 6px;
+   }
+   
+   .close-label{
+      width: 7px;
+      height: 7px;
+      background-size: 7px;
+   }
+
+
+
+   // End Baloons
 
    
 
@@ -2163,7 +2268,7 @@ form .helios-palitre{
       font-size: 12px;
    }
 
-   footer .row .col-sm-6{
+   footer .footer-adress{
       text-align: left;
       padding: 0 15px;
    }
@@ -2174,6 +2279,9 @@ form .helios-palitre{
    footer .footer-phones{
       text-align: right;
    }
+   footer .footer-mail{
+         text-align: left;
+      }
    .footer-nav .footer-nav__item a{
       font-size: 12px;
    }
@@ -2232,23 +2340,26 @@ form .helios-palitre{
  // Форма заказа большая
 
    .product-order__big{
+      width: 240px;
+      height: auto;
 
       .orange-order{
          margin-top: 15px;
       }
-      width: 240px;
-      height: auto;
+
+      .product-card__price p{
+          font-size: 14px;
+      }
+      .product-card__price span{
+          font-size: 12px;
+   }
+
       }
    .product-order__big .second-title{
       font-size: 18px;
       margin-bottom: 10px;
    }
-   .product-card__price p{
-      font-size: 14px;
-   }
-   .product-card__price span{
-      font-size: 12px;
-   }
+   
    .product-order__big .input-box{
       margin-bottom: 5px;
    }
@@ -2260,10 +2371,172 @@ form .helios-palitre{
          padding: 5px 13px;
       }
 
+      // Contacts
+
+   .contacts-page .contact-data span{
+      font-size: 13px;
+   }
+   .contacts-page .contact-data .icon{
+      margin-left: 15px;
+   }
+
+   // Delivery
+
+  
+   .delivery-adv{
+      text-align: center;
+   }
+   .delivery .icon{
+      display: block;
+      margin-right: 10px;
+   }
+   .delivery .product-card__price{
+      width: auto;
+      margin-left: 5px;
+   }
+   .delivery .product-card__price p{
+      font-size: 12px;
+   }
+   .delivery .roboto-light__default{
+      font-size: 10px;
+   }
+    .delivery .roboto-regular__default{
+      font-size: 12px;
+   }
+
+   .figure-heart .owl-carousel .bordered{
+      width: 31%;
+      
+   }
+.product-card__order-section .to-right{
+   float: none;
+   margin-left: 15px;
+}
+.helios-palitre{
+   text-align: center;
+}
+
+.look-palitre{
+   font-size: 12px;
+}
+.material>div{
+   float: none;
+}
+
+.size>div{
+   float: none;
+}
+
+// Палитра
+
+      .palitres{
+         width: 240px;
+         height: auto;
+         overflow-y: auto;
+         
+
+          .palitres-item{
+            width: 78px;
+            height: 88px;
+            margin-bottom: 35px;
+           
+
+            img{
+               width: 78px;
+               height: 88px;
+               
+            }
+
+         
+      }   
+}
+
+// Print
+
+.print-content .grey-form .roboto-regular__default{
+   display: inline-block;
+}
+.grey-form .fill-discount p{
+   font-size: @fz18 - 2;
+}
+.print-content .grey-form .light-grey{
+   margin-bottom: 10px;
+}
+.print .grey-form .bordered{
+   margin-bottom: 10px;
+}
+.print .print-about .roboto-light__default{
+   font-size: 13px;
+   line-height: 20px;
+}
+.print .grey-form .jq-radio{
+      margin-right: 10px;
+   }
+.print .print-order{
+      margin-top: 30px;
+      text-align: center;
+   }
+.print .print-price{
+   font-size: 22px;
+   margin-left: 0;
+   display: block;
+}
+.print .print-order .orange-order{
+   float: none;
+   margin-top: 20px;
+}
+
+
+// vova - kate
+
+.vova-kate .quick-order-text{
+   margin-left: 0;
+}
+.vova-kate .properties p{
+   margin-left: 5px;
+}
+.vova-kate .properties .roboto-light__default{
+   text-indent: 0;
+}
+.vova-kate .properties .roboto-regular__default{
+   margin-left: 10px;
+}
+.vova-kate .roboto-light__default{
+   font-size: 12px;
+}
+.vova-kate .roboto-regular__default{
+   font-size: 12px;
+}
+
+// Standart, Vip
+
+.ready-solution__wedding{
+     padding: 15px 0;
+   margin-bottom: 20px;
+}
 
 
 
 
+.wedding-set__standart .pl-0{
+   padding-left: 15px;
+}
+.wedding-set__standart .pr-0{
+   padding-right: 15px;
+}
+
+.wedding-set__standart .xs-margin{
+   margin-bottom: 20px;
+}
+.wedding-set__standart .price-box{
+   margin-top: 30px;
+}
+.set-item .product-card__price p{
+   font-size: 24px;
+}
+.wedding-set__vip, .xs-margin{
+   margin-bottom: 20px;
+}
 }
 
 
@@ -2334,14 +2607,126 @@ form .helios-palitre{
       footer .footer-phones{
          text-align: right;
       }
+
       .footer-nav .footer-nav__item a{
          font-size: 12px;
+      }
+      footer .footer-adress{
+         padding-right: 15px;
       }
 
       .basket{
          width: 700px;
       }
 
+      .sort{
+         font-size: 0;
+      }
+      .sort p.roboto-light__default{
+         display: inline-block;
+         margin-bottom: 10px;
+         font-size: 12px;
+      }
+      .sort span.roboto-light__default{
+         display: block;
+         font-weight: 400;
+         font-size: 12px;
+         margin-bottom: 20px;
+      }
+
+      
+      .sort .bordered .by-popular{
+         width: 100%;
+         display: block;
+         margin-left: 5px;
+      } 
+      .sort .bordered .by-price{
+         width: 100%;
+         display: block;
+         margin-left: 5px;
+      }
+
+      .xs-right{
+         float: right;
+      }
+
+      // Contacts
+
+
+   .contacts-page {
+
+
+      .roboto-regular__default{
+         font-size: @fz18 - 2;
+          }
+      .roboto-light__default{
+         font-size: @fz18 - 2;
+          }
+
+   }
+
+   .contacts-page .contact-data span{
+      font-size: 16px;
+   }
+
+   .figure-heart .owl-carousel .bordered{
+      width: 31%;
+      
+   }
+
+   .material>div{
+   float: none;
+}
+
+   .size>div{
+   float: none;
+}
+.look-palitre{
+   font-size: 12px;
+}
+
+
+
+.helios-ballon .product-card__price p{
+   font-size: 26px;
+}
+.helios-ballon .product-card__price span{
+   font-size: @fz18 - 2;
+}
+
+// Print
+
+.print-content .grey-form .light-grey{
+   margin-bottom: 10px;
+}
+.print .grey-form .bordered{
+   margin-bottom: 10px;
+}
+.print .grey-form .jq-radio{
+      margin-right: 10px;
+   }
+   .print .print-order{
+      margin-top: 30px;
+   }
+
+   // standart, vip
+
+.wedding-set__standart ul li span.roboto-light__default{
+   font-size: 14px;
+}
+.wedding-set__vip ul li span.roboto-light__default{
+   font-size: 18px;
+}
+
+.wedding-set__vip, .wedding-set__standart .price-box{
+   margin-top: 30px;
+}
+.wedding-set__vip .product-card__price p, .wedding-set__standart .product-card__price p{
+   font-size: 24px;
+}
+.wedding-set__vip, .xs-margin{
+   margin-bottom: 20px;
+}
 
 
 
@@ -2393,6 +2778,54 @@ form .helios-palitre{
          margin-bottom: 25px;
       }
 
+      // Footer
+
+      .footer-adress{
+         padding-right: 20px;
+      }
+
+      .sort .by-popular{
+         width: 38%;
+         margin-left: 50px;
+      }
+      .figure-heart .owl-carousel .bordered{
+      width: 31%;
+      max-height: 100%;
+      
+   }
+   .look-palitre{
+   font-size: 12px;
+}
+
+   .form-bg{
+      padding: 15px;
+   }
+
+   .material>div{
+   float: none;
+   }
+
+   .size>div{
+   float: none;
+   }
+   
+   // Print
+
+   .print .grey-form .jq-radio{
+      margin-right: 10px;
+   }
+   .print .print-order{
+      margin-top: 30px;
+   }
+   .print .print-about .bordered{
+      margin-top: 22px;
+   }
+
+   // Standart, Vip
+
+   .wedding-set__vip, .xs-margin{
+   margin-bottom: 20px;
+}
 
       
 
