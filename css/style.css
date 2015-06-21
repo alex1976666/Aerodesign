@@ -23,6 +23,18 @@ header .logo span {
   line-height: 55px;
   text-transform: uppercase;
 }
+header .logo .blue {
+  color: #07b4c2;
+}
+header .logo .green {
+  color: #67bc25;
+}
+header .logo .orange {
+  color: #f68100;
+}
+header .logo .red {
+  color: #c4000d;
+}
 header .header-slogan {
   padding-left: 35px;
   font-family: 'Roboto', sans-serif;
@@ -341,10 +353,6 @@ footer p {
 body {
   height: 100%;
   color: #434a54;
-}
-* {
-  margin: 0;
-  padding: 0;
 }
 ul {
   margin: 0;
@@ -823,6 +831,9 @@ img {
   min-height: 410px;
   padding: 0;
 }
+.left-side-menu p.roboto-regular__default {
+  margin-left: 40px;
+}
 .left-side-menu .mt {
   margin-top: 350px;
 }
@@ -830,7 +841,23 @@ img {
   list-style: none;
 }
 .left-side-menu a {
-  line-height: 52px;
+  display: inline-block;
+  padding-left: 15px;
+  position: relative;
+}
+.left-side-menu a:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -7px;
+  background-image: url(../img/icons/spritesheet2.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 7px;
+  height: 13px;
+  background-position: -922px -3px;
 }
 .left-side-menu .icon-mini-arrow-down {
   margin-left: 15px;
@@ -842,12 +869,26 @@ img {
 .left-side-menu .roboto-regular__default:hover .icon-mini-arrow-down {
   transform: scale(1.5);
 }
+.figure-heart .second-title {
+  text-align: center;
+}
+.second-title {
+  text-align: center;
+}
+.set-item h2.roboto-light__default {
+  text-align: center;
+}
 .ready-solution__wedding {
   margin-bottom: 28px;
   padding: 27px 52px 27px 27px;
+  text-align: center;
+}
+.ready-solution__wedding .orange-order {
+  float: none;
 }
 .ready-solution__wedding .product-card__title {
   margin-bottom: 30px;
+  text-align: center;
 }
 .ready-solution__wedding ul {
   padding-left: 30px;
@@ -855,6 +896,7 @@ img {
 }
 .ready-solution__wedding .product-card__price {
   width: 100%;
+  text-align: center;
 }
 .ready-solution__wedding .product-card__price p {
   font-size: 24px;
@@ -1940,14 +1982,11 @@ form .helios-palitre .bordered {
     text-align: center;
   }
   .map .map-box {
+    margin-right: 0;
     margin-bottom: 20px;
   }
-  .map .mr {
-    margin-right: 30px;
-  }
   .map .form-box {
-    width: auto;
-    margin-left: 15px;
+    width: 100%;
   }
   .left-side-menu {
     text-align: center;
@@ -2004,20 +2043,25 @@ form .helios-palitre .bordered {
     font-size: 12px;
   }
   footer .footer-adress {
-    text-align: left;
-    padding: 0 15px;
+    padding-right: 20px;
+  }
+  footer .footer-adress .text-left {
+    text-align: center;
   }
   footer .social .text-right {
-    text-align: right;
+    text-align: center;
   }
   footer .footer-phones {
-    text-align: right;
+    text-align: center;
   }
   footer .footer-mail {
-    text-align: left;
+    text-align: center;
   }
   .footer-nav .footer-nav__item a {
     font-size: 12px;
+  }
+  footer .social {
+    text-align: center;
   }
   footer .social .icon {
     margin-left: 10px;
@@ -2052,6 +2096,10 @@ form .helios-palitre .bordered {
   .basket .delivery-form {
     padding: 5px 15px;
   }
+  .basket .delivery-form .basket-send {
+    padding-left: 15px;
+    margin-top: 10px;
+  }
   .basket .delivery-form .input-box {
     margin-bottom: 5px;
   }
@@ -2061,6 +2109,8 @@ form .helios-palitre .bordered {
   .product-order__big {
     width: 240px;
     height: auto;
+    margin: 40px auto;
+    overflow: auto;
   }
   .product-order__big .orange-order {
     margin-top: 15px;

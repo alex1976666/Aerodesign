@@ -3504,18 +3504,7 @@ tbody.collapse.in {
 }
 
 .dropdown-menu li:hover:before{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -7px;
-  background-image: url(../../img/icons/spritesheet2.png);
-  background-repeat: no-repeat;
-  display: inline-block;
-  vertical-align: middle;
-  width: 7px;
-  height: 13px;
-  background-position: -922px -3px;
+
 }
 .open > .dropdown-menu {
   display: block;

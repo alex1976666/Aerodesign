@@ -20,10 +20,10 @@
 				<div class="col-xs-3 col-sm-4 col-md-2 col-lg-2">
 					<div class="logo">
 						<a href="/">
-							<span style="color: #07b4c2">у</span>
-							<span style="color: #67bc25">л</span>
-							<span style="color: #f68100">е</span>
-							<span style="color: #c4000d">т</span>
+							<span class="blue">у</span>
+							<span class="green">л</span>
+							<span class="orange">е</span>
+							<span class="red">т</span>
 						</a>
 					</div>
 				</div>
@@ -251,7 +251,7 @@
 					<form action="">
 						<div class="row">
 
-							<div class="col-xs-6">
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
 								<p class="second-title">Способ получения</p>
 
@@ -278,7 +278,7 @@
 
 							</div>
 
-							<div class="col-xs-6 basket-send">
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 basket-send">
 
 								<label for="name">Имя</label>
 								<input type="text" id="name" name="name" placeholder="Имя">
@@ -305,7 +305,7 @@
 	////////      Позвоните мне      //////////
 	///////////////////////////////////////// -->
 
-		<div class="bordered form-box recall-mini text-center psr none">
+		<div class="bordered form-box recall-mini text-center psr hidden">
 
 			<div class="close-round"></div>
 
@@ -460,7 +460,7 @@ $(document).ready(function(){
 
     $(".call-me").click(function(e){
         e.preventDefault();
-        $(".none").fadeIn();
+        $(".hidden").fadeIn();
         $(".hover-mate").fadeIn();
     });
 
