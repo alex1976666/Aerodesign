@@ -108,7 +108,7 @@
 				<div class="row base-row">
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<div class="bordered">
-							<a href="vova-kate.html" class="product-card__title">Свадьба Вовы и Кати</a>
+							<a href="wedding-sample.html" class="product-card__title">Свадьба Вовы и Кати</a>
 							<p class="roboto-regular__default">
 								<i class="icon icon-orange-calendar"></i>
 								28.04.2015
@@ -132,7 +132,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<div class="bordered">
-							<a href="vova-kate.html" class="product-card__title">Свадьба Вовы и Кати</a>
+							<a href="wedding-sample.html" class="product-card__title">Свадьба Вовы и Кати</a>
 							<p class="roboto-regular__default">
 								<i class="icon icon-orange-calendar"></i>
 								28.04.2015
@@ -159,7 +159,7 @@
 				<div class="row base-row">
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<div class="bordered">
-							<a href="vova-kate.html" class="product-card__title">Свадьба Вовы и Кати</a>
+							<a href="wedding-sample.html" class="product-card__title">Свадьба Вовы и Кати</a>
 							<p class="roboto-regular__default">
 								<i class="icon icon-orange-calendar"></i>
 								28.04.2015
@@ -183,7 +183,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<div class="bordered">
-							<a href="vova-kate.html" class="product-card__title">Свадьба Вовы и Кати</a>
+							<a href="wedding-sample.html" class="product-card__title">Свадьба Вовы и Кати</a>
 							<p class="roboto-regular__default">
 								<i class="icon icon-orange-calendar"></i>
 								28.04.2015
@@ -210,7 +210,7 @@
 				<div class="row base-row">
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<div class="bordered">
-							<a href="vova-kate.html" class="product-card__title">Свадьба Вовы и Кати</a>
+							<a href="wedding-sample.html" class="product-card__title">Свадьба Вовы и Кати</a>
 							<p class="roboto-regular__default">
 								<i class="icon icon-orange-calendar"></i>
 								28.04.2015
@@ -234,7 +234,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<div class="bordered">
-							<a href="vova-kate.html" class="product-card__title">Свадьба Вовы и Кати</a>
+							<a href="wedding-sample.html" class="product-card__title">Свадьба Вовы и Кати</a>
 							<p class="roboto-regular__default">
 								<i class="icon icon-orange-calendar"></i>
 								28.04.2015
@@ -375,15 +375,15 @@
 								<p class="second-title">Способ получения</p>
 
 								<p class="input-box">
-									<input type="radio" name="delivery" id="pickup">
+									<input type="radio" name="delivery" required id="pickup">
 									<label for="pickup">Самовывоз</label>
 								</p>
 								<p class="input-box">
-									<input type="radio" name="delivery" id="city">
+									<input type="radio" name="delivery" required id="city">
 									<label for="city">Доставка по городу</label>
 								</p>
 								<p class="input-box">
-									<input type="radio" name="delivery" id="department">
+									<input type="radio" name="delivery" required id="department">
 									<label for="department">Доставка по ЛО</label>
 								</p>
 
@@ -400,10 +400,10 @@
 							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 basket-send">
 
 								<label for="name">Имя</label>
-								<input type="text" id="name" name="name" placeholder="Имя">
+								<input type="text" id="name" name="name" required placeholder="Имя">
 
 								<label for="phone">Номер телефона</label>
-								<input type="tel"  id="phone" name="phone" placeholder="Номер телефона">
+								<input type="tel"  id="phone" name="phone" required placeholder="Номер телефона">
 
 								<button type="submit" class="btn-green to-right">
 									<span class="uppercase">отправить заказ</span>
@@ -424,7 +424,7 @@
 	////////      Позвоните мне      //////////
 	///////////////////////////////////////// -->
 
-		<div class="bordered form-box recall-mini text-center psr hidden">
+		<div class="bordered form-box recall-mini text-center psr none">
 
 			<div class="close-round"></div>
 
@@ -438,10 +438,10 @@
 			<form action="#" class="clearfix">
 
 				<label for="name" class="to-left">Имя</label>
-				<input type="text" id="name" name="name" placeholder="Имя">
+				<input type="text" id="name" name="name" required placeholder="Имя">
 
 				<label for="phone" class="to-left">Номер телефона</label>
-				<input type="tel"  id="phone" name="phone" placeholder="Номер телефона">
+				<input type="tel"  id="phone" name="phone" required placeholder="Номер телефона">
 
 				<button type="submit" class="btn-green" id="call-me-2">Позвоните мне</button>
 			</form>
@@ -579,7 +579,7 @@ $(document).ready(function(){
 
     $(".call-me").click(function(e){
         e.preventDefault();
-        $(".hidden").fadeIn();
+        $(".none").fadeIn();
         $(".hover-mate").fadeIn();
     });
 

@@ -159,21 +159,21 @@
 									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 roboto-regular__default light-grey">2. Количество сторон для печати</div>
 									<div class="col-xs-12 col-sm-6 col-md-12 col-lg-4">
 										<p>
-											<input type="radio" name="color-side" id="1c2s">
+											<input type="radio" name="color-side" required id="1c2s">
 											<label class="roboto-regular__default" for="1c2s">1 цвет, 2 стороны</label>
 										</p>
 										<p>
-											<input type="radio" name="color-side" id="1c1s">
+											<input type="radio" name="color-side" required id="1c1s">
 											<label class="roboto-regular__default" for="1c1s">1 цвет, 1 сторона</label>
 										</p>
 									</div>
 									<div class="col-xs-12 col-sm-6 col-md-12 col-lg-4">
 										<p>
-											<input type="radio" name="color-side" id="2c2s">
+											<input type="radio" name="color-side" required id="2c2s">
 											<label class="roboto-regular__default" for="2c2s">2 цвета, 2 стороны</label>
 										</p>
 										<p>
-											<input type="radio" name="color-side" id="2c1s">
+											<input type="radio" name="color-side" required id="2c1s">
 											<label class="roboto-regular__default" for="2c1s">2 цвета, 1 сторона</label>
 										</p>
 									</div>
@@ -181,11 +181,11 @@
 								<div class="row">
 									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 roboto-regular__default light-grey">3. Выберите размер</div>
 									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 pr-0">
-										<input type="radio" id="12inch" name="size">
+										<input type="radio" required id="12inch" name="size">
 										<label class="roboto-regular__default" for="12inch">12-ти дюймовые (28см)</label>
 									</div>
 									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 pr-0">
-										<input type="radio" id="14inch" name="size">
+										<input type="radio" required id="14inch" name="size">
 										<label class="roboto-regular__default" for="14inch">14-ти дюймовые (33см)</label>
 									</div>
 								</div>
@@ -226,11 +226,11 @@
 								<div class="row">
 									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 roboto-regular__default light-grey">6. Выберите надувку</div>
 									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
-										<input type="radio" id="fill" name="fill">
+										<input type="radio" id="fill" required name="fill">
 										<label class="roboto-regular__default" for="fill">Гелием</label>
-										<input type="radio" id="fill" name="fill">
+										<input type="radio" id="fill" required name="fill">
 										<label class="roboto-regular__default" for="fill">Воздухом</label>
-										<input type="radio" id="fill" name="fill">
+										<input type="radio" id="fill" required name="fill">
 										<label class="roboto-regular__default" for="fill">Без надувки</label>
 									</div>
 								</div>
@@ -385,15 +385,15 @@
 								<p class="second-title">Способ получения</p>
 
 								<p class="input-box">
-									<input type="radio" name="delivery" id="pickup">
+									<input type="radio" name="delivery" required id="pickup">
 									<label for="pickup">Самовывоз</label>
 								</p>
 								<p class="input-box">
-									<input type="radio" name="delivery" id="city">
+									<input type="radio" name="delivery" required id="city">
 									<label for="city">Доставка по городу</label>
 								</p>
 								<p class="input-box">
-									<input type="radio" name="delivery" id="department">
+									<input type="radio" name="delivery" required id="department">
 									<label for="department">Доставка по ЛО</label>
 								</p>
 
@@ -410,10 +410,10 @@
 							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 basket-send">
 
 								<label for="name">Имя</label>
-								<input type="text" id="name" name="name" placeholder="Имя">
+								<input type="text" id="name" name="name" required placeholder="Имя">
 
 								<label for="phone">Номер телефона</label>
-								<input type="tel"  id="phone" name="phone" placeholder="Номер телефона">
+								<input type="tel"  id="phone" name="phone" required placeholder="Номер телефона">
 
 								<button type="submit" class="btn-green to-right">
 									<span class="uppercase">отправить заказ</span>
@@ -434,7 +434,7 @@
 		////////      Позвоните мне      //////////
 		///////////////////////////////////////// -->
 
-		<div class="bordered form-box recall-mini text-center psr hidden">
+		<div class="bordered form-box recall-mini text-center psr none">
 
 			<div class="close-round"></div>
 
@@ -448,10 +448,10 @@
 			<form action="#" class="clearfix">
 
 				<label for="name" class="to-left">Имя</label>
-				<input type="text" id="name" name="name" placeholder="Имя">
+				<input type="text" id="name" name="name" required placeholder="Имя">
 
 				<label for="phone" class="to-left">Номер телефона</label>
-				<input type="tel"  id="phone" name="phone" placeholder="Номер телефона">
+				<input type="tel"  id="phone" name="phone" required placeholder="Номер телефона">
 
 				<button type="submit" class="btn-green" id="call-me-2">Позвоните мне</button>
 			</form>
@@ -589,7 +589,7 @@
 
 	    $(".call-me").click(function(e){
 	        e.preventDefault();
-	        $(".hidden").fadeIn();
+	        $(".none").fadeIn();
 	        $(".hover-mate").fadeIn();
 	    });
 

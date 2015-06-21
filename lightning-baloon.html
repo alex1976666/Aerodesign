@@ -158,19 +158,19 @@
 											<p class="roboto-regular__default">Выберите материал</p>
 											<p>
 												<div>
-													<input type="radio" id="metallic" name="material">
+													<input type="radio" id="metallic" required name="material">
 													<label class="roboto-light__default" for="metallic">Металлик</label>
 												</div>
 												<div>
-													<input type="radio" id="cristall" name="material">
+													<input type="radio" id="cristall" required name="material">
 													<label class="roboto-light__default" for="cristall">Кристалл</label>
 												</div>
 												<div>
-													<input type="radio" id="pastel" name="material">
+													<input type="radio" id="pastel" required name="material">
 													<label class="roboto-light__default" for="pastel">Пастель</label>
 												</div>
 												<div>
-													<input type="radio" id="special" name="material">
+													<input type="radio" id="special" required name="material">
 													<label class="roboto-light__default" for="Special">Special</label>
 												</div>
 											</p>
@@ -179,11 +179,11 @@
 											<p class="roboto-regular__default">Выберите размер</p>
 											<p>
 												<div>
-													<input type="radio" id="12inch" name="size">
+													<input type="radio" id="12inch" required name="size">
 													<label class="roboto-light__default" for="12inch">12-ти дюймовые (28см)</label>
 												</div>
 												<div>
-													<input type="radio" id="14inch" name="size">
+													<input type="radio" id="14inch" required name="size">
 													<label class="roboto-light__default" for="14inch">14-ти дюймовые (33см)</label>
 												</div>
 											</p>
@@ -271,20 +271,20 @@
 											</div>
 										</div>
 									</div>
-									<input type="checkbox" id="process" name="process">
+									<input type="checkbox"required id="process" name="process">
 									<label for="process" class="roboto-light__default ">Обработка шара (5 Р/шар)</label>
 
 									<p class="roboto-regular__default mt">Способ получения</p>
 									<p class="input-box">
-										<input type="radio" name="delivery" id="pickup">
+										<input type="radio" name="delivery" required id="pickup">
 										<label for="pickup">Самовывоз</label>
 									</p>
 									<p class="input-box">
-										<input type="radio" name="delivery" id="city">
+										<input type="radio" name="delivery" required id="city">
 										<label for="city">Доставка по городу</label>
 									</p>
 									<p class="input-box">
-										<input type="radio" name="delivery" id="department">
+										<input type="radio" name="delivery" required id="department">
 										<label for="department">Доставка по ЛО</label>
 									</p>
 
@@ -578,7 +578,7 @@
 
 			  $(".call-me").click(function(e){
 			  	e.preventDefault();
-			  	$(".hidden").fadeIn();
+			  	$(".none").fadeIn();
 			  	$(".hover-mate").fadeIn();
 			  });
 
@@ -926,15 +926,15 @@
 						<p class="second-title">Способ получения</p>
 
 						<p class="input-box">
-							<input type="radio" name="delivery" id="pickup">
+							<input type="radio" name="delivery" required id="pickup">
 							<label for="pickup">Самовывоз</label>
 						</p>
 						<p class="input-box">
-							<input type="radio" name="delivery" id="city">
+							<input type="radio" name="delivery" required id="city">
 							<label for="city">Доставка по городу</label>
 						</p>
 						<p class="input-box">
-							<input type="radio" name="delivery" id="department">
+							<input type="radio" name="delivery" required id="department">
 							<label for="department">Доставка по ЛО</label>
 						</p>
 
@@ -951,10 +951,10 @@
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 basket-send">
 
 						<label for="name">Имя</label>
-						<input type="text" id="name" name="name" placeholder="Имя">
+						<input type="text" id="name" name="name" required placeholder="Имя">
 
 						<label for="phone">Номер телефона</label>
-						<input type="tel"  id="phone" name="phone" placeholder="Номер телефона">
+						<input type="tel"  id="phone" name="phone" required placeholder="Номер телефона">
 
 						<button type="submit" class="btn-green to-right">
 							<span class="uppercase">отправить заказ</span>
@@ -989,11 +989,11 @@
 
 	<form action="#">
 		<p class="input-box">
-			<input type="radio" name="add" id="add">
+			<input type="radio" name="add" required id="add">
 			<label for="add">Добавить к заказу</label>
 		</p>
 		<p class="input-box">
-			<input type="radio" name="add" id="only-this">
+			<input type="radio" name="add" required id="only-this">
 			<label for="only-this">Купить только этот товар</label>
 		</p>
 	</form>
@@ -1001,13 +1001,13 @@
 	<form action="#" class="clearfix">
 
 		<label for="name">Имя</label>
-		<input type="text" id="name" name="name" placeholder="Имя">
+		<input type="text" id="name" name="name" required placeholder="Имя">
 
 		<label for="phone">Номер телефона</label>
-		<input type="tel"  id="phone" name="phone" placeholder="Номер телефона">
+		<input type="tel"  id="phone" name="phone" required placeholder="Номер телефона">
 
 		<label for="email">E-mail</label>
-		<input type="email" id="email" name="email" placeholder="e-mail">
+		<input type="email" id="email" name="email" required placeholder="e-mail">
 
 		<div class="to-right">
 			<button class="orange-order order-mid-2">
@@ -1035,7 +1035,7 @@
 			////////      Позвоните мне      //////////
 			///////////////////////////////////////// -->
 
-<div class="bordered form-box recall-mini text-center psr hidden">
+<div class="bordered form-box recall-mini text-center psr none">
 
 	<div class="close-round"></div>
 
@@ -1049,10 +1049,10 @@
 	<form action="#" class="clearfix">
 
 		<label for="name" class="to-left">Имя</label>
-		<input type="text" id="name" name="name" placeholder="Имя">
+		<input type="text" id="name" name="name" required placeholder="Имя">
 
 		<label for="phone" class="to-left">Номер телефона</label>
-		<input type="tel"  id="phone" name="phone" placeholder="Номер телефона">
+		<input type="tel"  id="phone" name="phone" required placeholder="Номер телефона">
 
 		<button type="submit" class="btn-green" id="call-me-2">Позвоните мне</button>
 	</form>

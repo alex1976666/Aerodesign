@@ -422,6 +422,7 @@ img {
 .middle:before {
   content: "";
   display: inline-block;
+  min-height: inherit;
   vertical-align: middle;
   height: 100%;
 }
@@ -831,9 +832,6 @@ img {
   min-height: 410px;
   padding: 0;
 }
-.left-side-menu p.roboto-regular__default {
-  margin-left: 40px;
-}
 .left-side-menu .mt {
   margin-top: 350px;
 }
@@ -863,16 +861,10 @@ img {
   margin-left: 15px;
   transition: transform .2s;
 }
-.left-side-menu .dropdown .roboto-regular__default {
-  cursor: pointer;
-}
 .left-side-menu .roboto-regular__default:hover .icon-mini-arrow-down {
   transform: scale(1.5);
 }
 .figure-heart .second-title {
-  text-align: center;
-}
-.second-title {
   text-align: center;
 }
 .set-item h2.roboto-light__default {
@@ -881,10 +873,6 @@ img {
 .ready-solution__wedding {
   margin-bottom: 28px;
   padding: 27px 52px 27px 27px;
-  text-align: center;
-}
-.ready-solution__wedding .orange-order {
-  float: none;
 }
 .ready-solution__wedding .product-card__title {
   margin-bottom: 30px;
@@ -1609,16 +1597,6 @@ img {
   height: 450px;
   padding: 20px;
 }
-.figure-heart .bordered:before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-.figure-heart .bordered img {
-  display: inline-block;
-  vertical-align: middle;
-}
 .figure-heart #owl-demo .item img {
   display: inline-block;
   max-height: 100%;
@@ -1690,7 +1668,6 @@ img {
   color: #aab2bd;
   font-weight: 300;
   margin-bottom: 3px;
-  display: inline-block;
 }
 .figure-heart form .basket-select p {
   margin-bottom: 0;
@@ -1994,6 +1971,9 @@ form .helios-palitre .bordered {
   .left-side-menu .roboto-light__default {
     font-size: 14px;
   }
+  p.roboto-regular__default {
+    margin-left: 40px;
+  }
   .sort {
     font-size: 0;
   }
@@ -2057,7 +2037,7 @@ form .helios-palitre .bordered {
   footer .footer-mail {
     text-align: center;
   }
-  .footer-nav .footer-nav__item a {
+  footer .footer-nav .footer-nav__item a {
     font-size: 12px;
   }
   footer .social {
@@ -2244,6 +2224,13 @@ form .helios-palitre .bordered {
   .ready-solution__wedding {
     padding: 15px 0;
     margin-bottom: 20px;
+    text-align: center;
+  }
+  .ready-solution__wedding .orange-order {
+    float: none;
+  }
+  .second-title {
+    text-align: center;
   }
   .wedding-set__standart .pl-0 {
     padding-left: 15px;
