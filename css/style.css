@@ -53,7 +53,10 @@ header .numb {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 18px;
+}
+header .numb a {
   color: #434a54;
+  text-decoration: none;
 }
 header .callme {
   color: #4d7d9a;
@@ -842,6 +845,7 @@ img {
   display: inline-block;
   padding-left: 15px;
   position: relative;
+  line-height: 30px;
 }
 .left-side-menu a:hover:before {
   content: "";
@@ -867,9 +871,6 @@ img {
 .figure-heart .second-title {
   text-align: center;
 }
-.set-item h2.roboto-light__default {
-  text-align: center;
-}
 .ready-solution__wedding {
   margin-bottom: 28px;
   padding: 27px 52px 27px 27px;
@@ -881,10 +882,6 @@ img {
 .ready-solution__wedding ul {
   padding-left: 30px;
   margin-bottom: 28px;
-}
-.ready-solution__wedding .product-card__price {
-  width: 100%;
-  text-align: center;
 }
 .ready-solution__wedding .product-card__price p {
   font-size: 24px;
@@ -2229,6 +2226,10 @@ form .helios-palitre .bordered {
   .ready-solution__wedding .orange-order {
     float: none;
   }
+  .ready-solution__wedding .product-card__price {
+    width: 100%;
+    text-align: center;
+  }
   .second-title {
     text-align: center;
   }
@@ -2246,6 +2247,9 @@ form .helios-palitre .bordered {
   }
   .set-item .product-card__price p {
     font-size: 24px;
+  }
+  .set-item h2.roboto-light__default {
+    text-align: center;
   }
   .wedding-set__vip,
   .xs-margin {
