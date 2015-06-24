@@ -95,13 +95,49 @@ header .main-nav {
   margin-top: 15px;
   overflow: hidden;
 }
+header .main-nav .active-nav-item:last-of-type {
+  margin-right: -5px;
+}
 header .main-nav__item {
   height: 75px;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
   position: relative;
-  padding-top: 5px;
+}
+header .active-nav-item {
+  height: 75px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+header .active-nav-item a {
+  font-size: 18px;
+  line-height: 75px;
+  color: #434a54;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  border-right: 1px solid #f4f2f2;
+  display: block;
+  transition: .3s;
+  white-space: nowrap;
+  padding: 0;
+  margin-top: -10px;
+}
+header .nav-blue {
+  border-top: 10px solid #07b4c2;
+}
+header .nav-green {
+  border-top: 10px solid #67bc25;
+}
+header .nav-yellow {
+  border-top: 10px solid #efd000;
+}
+header .nav-orange {
+  border-top: 10px solid #f68100;
+}
+header .nav-red {
+  border-top: 10px solid #c4000d;
 }
 header .main-nav__item:before {
   content: "";
@@ -135,7 +171,7 @@ header .main-nav__item:nth-child(5):before {
 header .main-nav__item a {
   font-size: 18px;
   line-height: 75px;
-  color: #434a54 !important;
+  color: #434a54;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   border-right: 1px solid #f4f2f2;
@@ -149,7 +185,7 @@ header .main-nav__item:last-child a {
 }
 header .main-nav__item:hover a {
   color: #434a54;
-  text-decoration: underline;
+  text-decoration: none;
 }
 header .navbar-collapse {
   padding-left: 0;
@@ -463,7 +499,12 @@ img {
   vertical-align: middle;
   padding-top: 7px;
 }
-.page ul li a:hover {
+.page ul li a:hover,
+.page ul li a .page-active {
+  background-color: #eeeff2;
+  color: #f68100;
+}
+.page .page-active a {
   background-color: #eeeff2;
   color: #f68100;
 }
@@ -502,9 +543,6 @@ img {
 }
 .light-grey {
   color: #aab2bd;
-}
-#owl-demo {
-  text-align: center;
 }
 #owl-demo .item img {
   display: block;
@@ -622,6 +660,14 @@ img {
   vertical-align: top;
   margin-right: 5px;
 }
+.product-card__price__item {
+  display: inline-block;
+  vertical-align: top;
+}
+.product-card__price .icon-bage {
+  margin-top: 3px;
+  margin-right: 4px;
+}
 .product-card__price p {
   display: inline-block;
   font-size: 16px;
@@ -629,7 +675,6 @@ img {
   font-weight: 400;
   color: #434a54;
   vertical-align: top;
-  margin-left: 4px;
   margin-bottom: 3px;
 }
 .product-card__price span {
@@ -637,6 +682,7 @@ img {
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  text-align: left;
 }
 .product-card__big {
   height: 632px;
@@ -841,11 +887,17 @@ img {
 .left-side-menu li {
   list-style: none;
 }
-.left-side-menu a {
+.left-side-menu span {
+  display: inline-block;
+  margin-left: -7px;
+}
+.left-side-menu a,
+.left-side-menu span {
   display: inline-block;
   padding-left: 15px;
   position: relative;
   line-height: 30px;
+  text-decoration: none;
 }
 .left-side-menu a:hover:before {
   content: "";
@@ -867,9 +919,6 @@ img {
 }
 .left-side-menu .roboto-regular__default:hover .icon-mini-arrow-down {
   transform: scale(1.5);
-}
-.figure-heart .second-title {
-  text-align: center;
 }
 .ready-solution__wedding {
   margin-bottom: 28px;
@@ -1650,6 +1699,7 @@ img {
   padding: 0;
   font-size: 0;
   background-color: #fff;
+  padding-top: 3px;
 }
 .figure-heart form .basket-counter,
 .figure-heart form .basket-select {
@@ -1678,8 +1728,10 @@ img {
 .figure-heart form .input-box {
   margin-bottom: 20px;
 }
-.figure-heart form label.roboto-light__default {
+.figure-heart form label {
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 .figure-heart form .btn-green {
   margin-top: 23px;
