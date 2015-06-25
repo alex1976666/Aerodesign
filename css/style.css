@@ -1981,6 +1981,9 @@ form .helios-palitre .bordered {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+.faq .accordion .accordion-item {
+  font-size: 0;
+}
 .faq .accordion p {
   margin-bottom: 0;
   position: relative;
@@ -2396,6 +2399,13 @@ form .helios-palitre .bordered {
   .wedding-set__vip,
   .xs-margin {
     margin-bottom: 20px;
+  }
+  .faq .accordion .accordion-item p {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .faq .accordion .accordion-item i {
+    margin-left: 8px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
