@@ -856,11 +856,12 @@ img{
       .close__item{
           background-image: url(../img/icons/spritesheet2.png);
           background-repeat: no-repeat;
-         width: 13px;
+          width: 13px;
           height: 13px;
           background-position: -709px -3px;
-          display: inline-block;
-          cursor: pointer;
+          border: 0;
+          background-color: transparent;
+          outline: 0;
 
           &:hover{
              background-position: -1461px -3px;
@@ -1481,7 +1482,7 @@ img{
    }
 
    .print-order{
-      margin-top: 90px;
+      margin-top: 34px;
 
       .roboto-regular__default{
          font-size: @fz18;
@@ -1592,6 +1593,28 @@ img{
 
    .fill-discount .icon-discount{
       transform: scale(0.6)
+   }
+
+   .print__name-tel{
+      margin-top: 20px;
+
+      label{
+         margin-right: 20px;
+         margin-top: 7px;
+         font-weight: normal;
+      }
+      input{
+        width: 60%;
+        color: #aab2bd;
+        padding: 8px 13px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        border: solid 1px #e6e9ed;
+        box-sizing: border-box;
+        outline: 0;
+        float: right;
+      }
    }
 }
 
@@ -3020,6 +3043,17 @@ form .helios-palitre{
    }
    .print .print-about .bordered{
       margin-top: 22px;
+   }
+
+   .grey-form .print__name-tel{
+
+       label{
+          width: 100%;
+      }
+      input{
+         width: 100%;
+         float: none;
+      }
    }
 
    // Standart, Vip

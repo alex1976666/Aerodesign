@@ -386,9 +386,6 @@ footer p {
   display: flex;
   justify-content: space-between;
 }
-.footer-nav ul__item {
-  /*display: table-cell;*/
-}
 .footer-nav__item a {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -1021,8 +1018,9 @@ img {
   width: 13px;
   height: 13px;
   background-position: -709px -3px;
-  display: inline-block;
-  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
 }
 .basket .close__item:hover {
   background-position: -1461px -3px;
@@ -1462,7 +1460,7 @@ img {
   margin-top: 45px;
 }
 .print .print-order {
-  margin-top: 90px;
+  margin-top: 34px;
 }
 .print .print-order .roboto-regular__default {
   font-size: 18px;
@@ -1551,6 +1549,26 @@ img {
 }
 .grey-form .fill-discount .icon-discount {
   transform: scale(0.6);
+}
+.grey-form .print__name-tel {
+  margin-top: 20px;
+}
+.grey-form .print__name-tel label {
+  margin-right: 20px;
+  margin-top: 7px;
+  font-weight: normal;
+}
+.grey-form .print__name-tel input {
+  width: 60%;
+  color: #aab2bd;
+  padding: 8px 13px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: solid 1px #e6e9ed;
+  box-sizing: border-box;
+  outline: 0;
+  float: right;
 }
 .helios-ballon .row {
   margin-bottom: 40px;
@@ -2612,6 +2630,13 @@ form .helios-palitre .bordered {
   }
   .print .print-about .bordered {
     margin-top: 22px;
+  }
+  .grey-form .print__name-tel label {
+    width: 100%;
+  }
+  .grey-form .print__name-tel input {
+    width: 100%;
+    float: none;
   }
   .wedding-set__vip,
   .xs-margin {
